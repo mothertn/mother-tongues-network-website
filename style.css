@@ -20,7 +20,7 @@ body {
   position: relative;
   top: 0;
   left: 0;
-  /* overflow: hidden; */
+  overflow: hidden;
 }
 .wrapper {
   width: 85%;
