@@ -144,7 +144,7 @@ footer {
 
 @media screen and (min-width: 1024px) {
   .title {
-    margin-top: 80px;
+    margin-top: 50px;
   }
   .flex-row-larger {
     margin-top: 40px;
