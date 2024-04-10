@@ -7,8 +7,8 @@ img {
 }
 
 body {
-    background: rgb(66,60,210);
-    background: linear-gradient(100deg, rgba(66,60,210,1) 8%, rgba(41,40,144,1) 23%, rgba(35,34,135,1) 54%, rgba(244,81,243,1) 100%);
+    background: rgb(224,65,223);
+    background: linear-gradient(9deg, rgba(224,65,223,1) 10%, rgba(35,34,135,1) 46%, rgba(35,34,135,1) 84%, rgba(40,104,191,1) 97%);
     color: white;
 }
 
@@ -53,8 +53,8 @@ a {
 /* HERO SECTION */
 
 .hero {
-    width: 90%;
-    height: 90vh;
+    width: 70%;
+    height: 80vh;
     margin: 0 auto;
     display: flex;
     align-items: center;
@@ -69,11 +69,16 @@ a {
 }
 
 h1 {
+    font-family: "Cinzel", serif;
     font-size: 64px;
 }
 
 p {
     font-size: 24px;
+}
+
+.hero-text {
+    width: 50%;
 }
 .hero-logo {
     width: 50%;
@@ -82,8 +87,9 @@ p {
     align-items: center;
 }
 
+
 .hero-logo img {
-    max-width: 500px;
+    max-width: 650px;
 }
 
 /* HOMEPAGE MAIN CONTENT */
@@ -101,7 +107,7 @@ p {
 }
 
 h2 {
-    font-size: 32px;
+    font-size: 48px;
 }
 
 .homepage-content img {
@@ -123,7 +129,16 @@ form {
 input[type=text]{
     padding: 10px;
     border: 1px solid #ccc;
-    border-radius: 10px;
+    border-radius: 20px;
+}
+
+[type=submit], button {
+    margin-left: 10px;
+    padding: 10px 30px;
+    border: none;
+    border-radius: 20px;
+    background-color: navy;
+    color: beige;
 }
 
 
