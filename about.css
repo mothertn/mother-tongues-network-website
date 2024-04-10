@@ -1,0 +1,56 @@
+html { box-sizing: border-box; }
+
+*, *:before, *:after { box-sizing: inherit; }
+
+img {
+    width: 100%;
+}
+
+/* Page Content */
+section {
+    width: 90%;
+    margin: 90px auto;
+    display: flex;
+    align-items: center;
+    gap: 80px;
+}
+
+section div {
+    width: 50%;
+}
+
+
+/* TEAM MEMBERS */
+.team-container {
+    width: 90%;
+    margin: 90px auto;
+}
+
+.team-container h2 {
+    text-align: center;
+}
+
+.team-members {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-left: 0;
+}
+
+.person {
+    width: 30%;
+    margin: 10px;
+    list-style-type: none;
+}
+
+.person img {
+    border-radius: 50%;
+    width: 245px;
+}
+
+/* Join us on our Mission */
+.mission {
+    width: 50%;
+    margin: 80px auto;
+    text-align: center;
+}
