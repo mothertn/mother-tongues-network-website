@@ -38,7 +38,7 @@ section div {
 }
 
 .person {
-    width: 30%;
+    flex-basis: 30%;
     margin: 10px;
     list-style-type: none;
     display: flex;
@@ -47,6 +47,7 @@ section div {
 }
 
 .person img {
+    border: 5px white solid;
     border-radius: 50%;
     width: 245px;
     height: 245px;
