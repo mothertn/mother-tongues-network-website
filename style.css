@@ -165,6 +165,9 @@ button {
 }
 
 /* contact form */
+.form-title {
+	text-align: center;
+}
 .form-info {
 	text-align: center;
 }
