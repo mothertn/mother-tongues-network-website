@@ -48,8 +48,26 @@ Variables (colors, text, spacing, etc.)
 	--body-background-color: var(--color-white);
 
 	/* Text */
+	/* Font Sizes */
+	--font16: 1rem;
+	--font24: 1.5rem;
+	--font48: 3rem;
+	--font64: 4rem;
+	/* Font Family */
+	--main-heading-font: "Cinzel", serif;
+	--sub-heading-font: "Josefin Sans", sans-serif;
+	--body-font: "Inter", sans-serif;
+	/* Line Height */
 
 	/* Spacing */
+	/* gap */
+	--gap10: 10px;
+	--gap20: 20px;
+	/* padding */
+	--pad10: 10px;
+	--pad20: 20px;
+	--pad30: 30px;
+
 
 	/* Wrappers */
 
@@ -63,12 +81,12 @@ Global Styles (html, body, text, links, etc.)
 */
 
 html {
-	font-size: 16px;
+	font-size: var(--font16);
 }
 
 body {
-	color: white;
-	background: rgb(224, 65, 223);
+	color: var(--color-white);
+	background: var(--color-purple);
 	background: linear-gradient(
 		9deg,
 		rgba(224, 65, 223, 1) 10%,
@@ -76,7 +94,6 @@ body {
 		rgba(35, 34, 135, 1) 84%,
 		rgba(40, 104, 191, 1) 97%
 	);
-	color: white;
 }
 
 /* Images */
@@ -88,22 +105,23 @@ img {
 /* Text */
 
 h1 {
-	font-family: "Cinzel", serif;
-	font-size: 64px;
+	font-family: var(--main-heading-font);
+	font-size: var(--font64);
 }
 
 h2 {
-	font-size: 48px;
+	font-size: var(--font48);
 }
 
 p {
-	font-size: 24px;
+	font-family: var(--body-font);
+	font-size: var(--font24);
 }
 
 /* Links */
 
 a {
-	color: white;
+	color: var(--color-white);
 	text-decoration: none;
 }
 
@@ -120,7 +138,9 @@ Wrappers (container, flexbox, etc.)
 /* Container */
 
 /* Wrappers */
-
+.wrapper {
+	max-width: 85%;
+}
 /* 
 ===================================
 Global Component Styles (buttons, forms, etc.)
@@ -228,7 +248,7 @@ header {
 }
 
 .home-text {
-	background-color: rgba(255, 255, 255, 0.178);
+	background-color: var(--color-transparent-white);
 	padding: 30px;
 	border-radius: 10px;
 }
@@ -250,7 +270,7 @@ form {
 
 input[type="text"] {
 	padding: 10px;
-	border: 1px solid #ccc;
+	border: 1px solid var(--color-neutral-gray);
 	border-radius: 20px;
 }
 
@@ -260,8 +280,8 @@ button {
 	padding: 10px 30px;
 	border: none;
 	border-radius: 20px;
-	background-color: navy;
-	color: beige;
+	background-color: var(--color-navy);
+	color: var(--color-beige);
 }
 
 /* contact form */
@@ -289,7 +309,7 @@ button {
 	border: none;
 	border-radius: 4px;
 	padding: 10px;
-	background-color: white;
+	background-color: var(--color-white);
 }
 
 /* FOOTER */
@@ -298,7 +318,7 @@ footer {
 	height: 80px;
 	margin: 0 auto;
 	display: flex;
-	background-color: rgba(227, 231, 232, 0.509);
+	background-color: var(--color-slate-grey);
 }
 
 .footer-content {
@@ -307,7 +327,7 @@ footer {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	color: black;
+	color: var(--color-black);
 }
 
 .footer-logo {
