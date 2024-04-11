@@ -1,3 +1,22 @@
+/*
+===================================
+===================================
+Global styles
+
+- The is the file for CSS that applies to the entire site.
+- Variables, resets, global styles, etc. should be added here.
+- This file should be linked to every page on the site.
+- We can also add global component styles here (buttons, forms, etc.)
+===================================
+===================================
+*/
+
+/* 
+===================================
+Resets (box-sizing, normalize, etc.) 
+===================================
+*/
+
 html {
 	box-sizing: border-box;
 }
@@ -8,11 +27,40 @@ html {
 	box-sizing: inherit;
 }
 
-img {
-	width: 100%;
+/* 
+===================================
+Variables (colors, text, spacing, etc.)
+===================================
+*/
+
+:root {
+	/* Color Definitions */
+	--color-white: #fff;
+
+	/* Color Assignment */
+	--body-background-color: var(--color-white);
+
+	/* Text */
+
+	/* Spacing */
+
+	/* Wrappers */
+
+	/* Media Queries */
+}
+
+/* 
+===================================
+Global Styles (html, body, text, links, etc.)
+===================================
+*/
+
+html {
+	font-size: 16px;
 }
 
 body {
+	color: white;
 	background: rgb(224, 65, 223);
 	background: linear-gradient(
 		9deg,
@@ -23,6 +71,58 @@ body {
 	);
 	color: white;
 }
+
+/* Images */
+
+img {
+	max-width: 100%;
+}
+
+/* Text */
+
+h1 {
+	font-family: "Cinzel", serif;
+	font-size: 64px;
+}
+
+h2 {
+	font-size: 48px;
+}
+
+p {
+	font-size: 24px;
+}
+
+/* Links */
+
+a {
+	color: white;
+	text-decoration: none;
+}
+
+/* Lists */
+
+/* Forms */
+
+/* 
+===================================
+Wrappers (container, flexbox, etc.)
+===================================
+*/
+
+/* Container */
+
+/* Wrappers */
+
+/* 
+===================================
+Global Component Styles (buttons, forms, etc.)
+===================================
+*/
+
+/* Buttons */
+
+/* Forms */
 
 /* Utility Classes */
 .sr-only {
@@ -46,9 +146,17 @@ header {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
+	width: 90%;
+	margin: 30px auto;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
 }
 
 .top-logo {
+	display: flex;
+	gap: 10px;
+	align-items: center;
 	display: flex;
 	gap: 10px;
 	align-items: center;
@@ -62,16 +170,14 @@ header {
 	display: flex;
 	align-items: center;
 	padding-left: 0;
+	display: flex;
+	align-items: center;
+	padding-left: 0;
 }
 
 .top-links li {
 	list-style-type: none;
 	padding: 10px;
-}
-
-a {
-	color: white;
-	text-decoration: none;
 }
 
 /* HERO SECTION */
@@ -90,15 +196,6 @@ a {
 	align-items: center;
 	justify-content: center;
 	gap: 20px;
-}
-
-h1 {
-	font-family: "Cinzel", serif;
-	font-size: 64px;
-}
-
-p {
-	font-size: 24px;
 }
 
 .hero-text {
@@ -127,10 +224,6 @@ p {
 	background-color: rgba(255, 255, 255, 0.178);
 	padding: 30px;
 	border-radius: 10px;
-}
-
-h2 {
-	font-size: 48px;
 }
 
 .homepage-content img {
@@ -219,4 +312,23 @@ footer {
 
 .footer-logo img {
 	width: 70px;
+}
+
+/* 
+===================================
+Media Queries (overriding styles for different screen sizes)
+Feel free to change the min/max-width values to whatever you need. Use variables.
+===================================
+*/
+
+/* Tablet & Smaller */
+@media (max-width: 768px) {
+}
+
+/* Tablet Only */
+@media (min-width: 768px) and (max-width: 1024px) {
+}
+
+/* Phone Only */
+@media (max-width: 480px) {
 }
