@@ -48,7 +48,7 @@ section div {
 
 .team-members {
     width: 80%;
-    margin: 0 auto;
+    margin: 50px auto;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -67,8 +67,8 @@ section div {
 .person img {
     border: 5px white solid;
     border-radius: 50%;
-    width: 220px;
-    height: 220px;
+    width: 200px;
+    height: 200px;
     overflow: hidden;
     object-fit: cover;
 }
