@@ -19,13 +19,11 @@ Resets (box-sizing, normalize, etc.)
 
 html {
 	box-sizing: border-box;
-	box-sizing: border-box;
 }
 
 *,
 *:before,
 *:after {
-	box-sizing: inherit;
 	box-sizing: inherit;
 }
 
@@ -62,14 +60,6 @@ html {
 }
 
 body {
-	background: rgb(224, 65, 223);
-	background: linear-gradient(
-		9deg,
-		rgba(224, 65, 223, 1) 10%,
-		rgba(35, 34, 135, 1) 46%,
-		rgba(35, 34, 135, 1) 84%,
-		rgba(40, 104, 191, 1) 97%
-	);
 	color: white;
 	background: rgb(224, 65, 223);
 	background: linear-gradient(
@@ -174,7 +164,6 @@ header {
 
 .top-logo img {
 	width: 70px;
-	width: 70px;
 }
 
 .top-links {
@@ -189,19 +178,11 @@ header {
 .top-links li {
 	list-style-type: none;
 	padding: 10px;
-	list-style-type: none;
-	padding: 10px;
 }
 
 /* HERO SECTION */
 
 .hero {
-	width: 70%;
-	height: 80vh;
-	margin: 0 auto;
-	display: flex;
-	align-items: center;
-	justify-content: center;
 	width: 70%;
 	height: 80vh;
 	margin: 0 auto;
@@ -215,21 +196,12 @@ header {
 	align-items: center;
 	justify-content: center;
 	gap: 20px;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	gap: 20px;
 }
 
 .hero-text {
 	width: 50%;
-	width: 50%;
 }
 .hero-logo {
-	width: 50%;
-	display: flex;
-	justify-content: center;
-	align-items: center;
 	width: 50%;
 	display: flex;
 	justify-content: center;
@@ -238,15 +210,10 @@ header {
 
 .hero-logo img {
 	max-width: 650px;
-	max-width: 650px;
 }
 
 /* HOMEPAGE MAIN CONTENT */
 .homepage-content {
-	width: 80%;
-	margin: 60px auto;
-	display: flex;
-	gap: 80px;
 	width: 80%;
 	margin: 60px auto;
 	display: flex;
@@ -257,21 +224,14 @@ header {
 	background-color: rgba(255, 255, 255, 0.178);
 	padding: 30px;
 	border-radius: 10px;
-	background-color: rgba(255, 255, 255, 0.178);
-	padding: 30px;
-	border-radius: 10px;
 }
 
 .homepage-content img {
-	width: 50%;
 	width: 50%;
 }
 
 /* STAY UPDATED */
 .stay-updated {
-	width: 50%;
-	margin: 200px auto;
-	text-align: center;
 	width: 50%;
 	margin: 200px auto;
 	text-align: center;
@@ -351,7 +311,6 @@ footer {
 }
 
 .footer-logo img {
-	width: 70px;
 	width: 70px;
 }
 
