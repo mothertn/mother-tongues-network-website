@@ -36,6 +36,13 @@ Variables (colors, text, spacing, etc.)
 :root {
 	/* Color Definitions */
 	--color-white: #fff;
+	--color-black: #000;
+	--color-beige: #F5F5DC;
+	--color-navy: #000080;
+	--color-neutral-gray: #ccc;
+	--color-transparent-white: #ffffff2d;
+	--color-slate-grey: #e3e7e882;
+	--color-purple: #e041df;
 
 	/* Color Assignment */
 	--body-background-color: var(--color-white);
