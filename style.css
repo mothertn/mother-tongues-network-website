@@ -183,7 +183,7 @@ header {
 /* HERO SECTION */
 
 .hero {
-	width: 70%;
+	width: 80%;
 	height: 80vh;
 	margin: 0 auto;
 	display: flex;
@@ -200,6 +200,11 @@ header {
 
 .hero-text {
 	width: 50%;
+	padding: 100px;
+	background-image: url(./assets/home-svg.svg);
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
 }
 .hero-logo {
 	width: 50%;
@@ -218,12 +223,19 @@ header {
 	margin: 60px auto;
 	display: flex;
 	gap: 80px;
+	border-radius: 30px;
+}
+
+.left-fade {
+	background: linear-gradient(to left, rgba(0, 0, 0, 0.368), transparent 70%);
+}
+
+.right-fade {
+	background: linear-gradient(to right, rgba(0, 0, 0, 0.368), transparent 70%);
 }
 
 .home-text {
-	background-color: rgba(255, 255, 255, 0.178);
 	padding: 30px;
-	border-radius: 10px;
 }
 
 .homepage-content img {
@@ -232,9 +244,16 @@ header {
 
 /* STAY UPDATED */
 .stay-updated {
-	width: 50%;
+	width: 65%;
 	margin: 200px auto;
 	text-align: center;
+	background: rgba(0, 0, 0, 0.368);
+	border-radius: 30px;
+	padding: 50px 80px;
+}
+
+.stay-updated h2 {
+	margin: 0;
 }
 
 form {
