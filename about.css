@@ -33,14 +33,14 @@ section div {
 
 /* TEAM MEMBERS */
 .team-container {
-    width: 95%;
+    /* width: 95%; */
     max-width: 1600px;
-    margin: 90px auto;
-    padding: 130px 0px;
+    margin: 0 auto;
+    padding: 160px 0px;
     background-image: url(./assets/team-blob.svg);
     background-position: center;
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: cover;
 }
 
 .team-container h2, .team-container p {
