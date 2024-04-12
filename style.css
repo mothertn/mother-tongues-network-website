@@ -36,14 +36,41 @@ Variables (colors, text, spacing, etc.)
 :root {
 	/* Color Definitions */
 	--color-white: #fff;
+	--color-black: #000;
+	--color-beige: #F5F5DC;
+	--color-navy: #000080;
+	--color-neutral-gray: #ccc;
+	--color-transparent-white: #ffffff2d;
+	--color-slate-grey: #e3e7e882;
+	--color-purple: #e041df;
 
 	/* Color Assignment */
 	--body-background-color: var(--color-white);
 
 	/* Text */
+	/* Font Sizes */
+	--font-mobile-sm: 0.9rem;
+	--font-mobile-md: 1.313rem;
+	--font-mobile-lg: 2rem;
+	--font-sm: 1rem;
+	--font-md: 1.5rem;
+	--font-lg: 3rem;
+	--font-xxl: 4rem;
+	/* Font Family */
+	--main-heading-font: "Cinzel", Georgia, serif;
+	--sub-heading-font: "Josefin Sans", Helvetica, "Open Sans", Arial, sans-serif;
+	--body-font: "Inter", "Open Sans", Arial, sans-serif;
+	/* Line Height */
 
 	/* Spacing */
+	--spacing-sm: 10px;
+	--spacing-md: 20px;
+	--spacing-lg: 30px;
 
+	/* Border Radius */
+	--radius-sm: 10px;
+	--radius-md: 20px;
+	
 	/* Wrappers */
 
 	/* Media Queries */
@@ -56,12 +83,12 @@ Global Styles (html, body, text, links, etc.)
 */
 
 html {
-	font-size: 16px;
+	font-size: var(--font16);
 }
 
 body {
-	color: white;
-	background: rgb(224, 65, 223);
+	color: var(--color-white);
+	background: var(--color-purple);
 	background: linear-gradient(
 		9deg,
 		rgba(224, 65, 223, 1) 10%,
@@ -69,7 +96,6 @@ body {
 		rgba(35, 34, 135, 1) 84%,
 		rgba(40, 104, 191, 1) 97%
 	);
-	color: white;
 }
 
 /* Images */
@@ -81,22 +107,23 @@ img {
 /* Text */
 
 h1 {
-	font-family: "Cinzel", serif;
-	font-size: 64px;
+	font-family: var(--main-heading-font);
+	font-size: var(--font64);
 }
 
 h2 {
-	font-size: 48px;
+	font-size: var(--font48);
 }
 
 p {
-	font-size: 24px;
+	font-family: var(--body-font);
+	font-size: var(--font24);
 }
 
 /* Links */
 
 a {
-	color: white;
+	color: var(--color-white);
 	text-decoration: none;
 	font-size: 24px;
 }
@@ -118,7 +145,10 @@ Wrappers (container, flexbox, etc.)
 /* Container */
 
 /* Wrappers */
-
+.wrapper {
+	max-width: 1728px;
+	width: 85%;
+}
 /* 
 ===================================
 Global Component Styles (buttons, forms, etc.)
@@ -160,10 +190,9 @@ header {
 
 .top-logo {
 	display: flex;
-	gap: 10px;
+	gap: var(--spacing-sm);
 	align-items: center;
 	display: flex;
-	gap: 10px;
 	align-items: center;
 }
 
@@ -175,14 +204,12 @@ header {
 	display: flex;
 	align-items: center;
 	padding-left: 0;
-	display: flex;
-	align-items: center;
-	padding-left: 0;
+	
 }
 
 .top-links li {
 	list-style-type: none;
-	padding: 10px;
+	padding: var(--spacing-sm);
 }
 
 /* HERO SECTION */
@@ -240,7 +267,9 @@ header {
 }
 
 .home-text {
-	padding: 30px;
+	background-color: var(--color-transparent-white);
+	padding: var(--spacing-lg);
+	border-radius: var(--radius-sm);
 }
 
 .homepage-content img {
@@ -266,19 +295,19 @@ form {
 }
 
 input[type="text"] {
-	padding: 10px;
-	border: 1px solid #ccc;
-	border-radius: 20px;
+	padding: var(--spacing-sm);
+	border: 1px solid var(--color-neutral-gray);
+	border-radius: var(--radius-md);
 }
 
 [type="submit"],
 button {
-	margin-left: 10px;
+	margin-left: var(--spacing-sm);
 	padding: 10px 30px;
 	border: none;
-	border-radius: 20px;
-	background-color: navy;
-	color: beige;
+	border-radius: var(--radius-md);
+	background-color: var(--color-navy);
+	color: var(--color-beige);
 }
 
 /* contact form */
@@ -293,20 +322,20 @@ button {
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	gap: 10px;
+	gap: var(--spacing-sm);
 }
 .form-info h2 {
 	padding-bottom: 0px;
 }
 .contact-form input,
 .contact-form textarea {
-	font-family: Inter;
+	font-family: var(--body-font);
 	width: 70%;
 	max-width: 500px;
 	border: none;
 	border-radius: 4px;
-	padding: 10px;
-	background-color: white;
+	padding: var(--spacing-sm);
+	background-color: var(--color-white);
 }
 
 /* FOOTER */
@@ -315,7 +344,7 @@ footer {
 	height: 80px;
 	margin: 0 auto;
 	display: flex;
-	background-color: rgba(227, 231, 232, 0.509);
+	background-color: var(--color-slate-grey);
 }
 
 .footer-content {
@@ -324,14 +353,14 @@ footer {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	color: black;
+	color: var(--color-black);
 }
 
 .footer-logo {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	gap: 10px;
+	gap: var(--spacing-sm);
 }
 
 .footer-logo img {
