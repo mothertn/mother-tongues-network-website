@@ -44,15 +44,13 @@ Variables (colors, text, spacing, etc.)
 	--color-slate-grey: #e3e7e882;
 	--color-purple: #e041df;
 
-	/* Color Assignment */
-	--body-background-color: var(--color-white);
-
 	/* Text */
 	/* Font Sizes */
 	--font-mobile-sm: 0.9rem;
 	--font-mobile-md: 1.313rem;
 	--font-mobile-lg: 2rem;
 	--font-sm: 1rem;
+	--font-smmd: 1.25rem;
 	--font-md: 1.5rem;
 	--font-lg: 3rem;
 	--font-xxl: 4rem;
@@ -61,6 +59,7 @@ Variables (colors, text, spacing, etc.)
 	--sub-heading-font: "Josefin Sans", Helvetica, "Open Sans", Arial, sans-serif;
 	--body-font: "Inter", "Open Sans", Arial, sans-serif;
 	/* Line Height */
+	--line-reg: 35px;
 
 	/* Spacing */
 	--spacing-sm: 10px;
@@ -110,15 +109,19 @@ img {
 h1 {
 	font-family: var(--main-heading-font);
 	font-size: var(--font-xxl);
+	margin-bottom: 0;
 }
 
 h2 {
+	font-family: var(--sub-heading-font);
 	font-size: var(--font-lg);
+	margin-bottom: 0;
 }
 
 p {
 	font-family: var(--body-font);
 	font-size: var(--font-md);
+	line-height: var(--line-reg);
 }
 
 /* Links */
@@ -147,7 +150,7 @@ Wrappers (container, flexbox, etc.)
 /* Wrappers */
 .wrapper {
 	max-width: var(--wrapper-max);
-	width: 85%;
+	width: 90%;
 }
 /* 
 ===================================
@@ -181,23 +184,18 @@ header {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	width: 90%;
-	margin: 30px auto;
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
 }
 
 .top-logo {
 	display: flex;
 	gap: var(--spacing-sm);
 	align-items: center;
-	display: flex;
-	align-items: center;
 }
 
-.top-logo p {
+span.logo-text,
+.footer-logo p {
 	font-family: var(--main-heading-font);
+	font-size: var(--font-mobile-lg);
 	font-weight: 700;
 }
 
@@ -225,9 +223,8 @@ header {
 /* HERO SECTION */
 
 .hero {
-	width: 90%;
-	height: 80vh;
-	margin: 80px auto;
+	width: 70%;
+	margin: 0 auto;
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -269,10 +266,9 @@ header {
 
 /* HOMEPAGE MAIN CONTENT */
 .homepage-content {
-	width: 80%;
 	margin: 60px auto;
 	display: flex;
-	gap: 80px;
+	gap: 20px;
 	border-radius: 30px;
 }
 
@@ -305,14 +301,17 @@ form {
 }
 
 input[type="text"] {
+	font-family: var(--body-font);
 	padding: var(--spacing-sm);
 	border: 1px solid var(--color-neutral-gray);
 	border-radius: var(--radius-md);
 }
 
+.stay-updated [type="submit"] {
+	margin-left: var(--spacing-sm);
+}
 [type="submit"],
 button {
-	margin-left: var(--spacing-sm);
 	padding: 10px 30px;
 	border: none;
 	border-radius: var(--radius-md);
@@ -379,6 +378,10 @@ footer {
 	background-color: var(--color-slate-grey);
 }
 
+footer a:hover {
+	text-decoration: underline;
+}
+
 .footer-content {
 	width: 90%;
 	margin: 0 auto;
@@ -386,6 +389,12 @@ footer {
 	justify-content: space-between;
 	align-items: center;
 	color: var(--color-black);
+}
+
+.footer-content a {
+	font-family: var(--body-font);
+	color: #000;
+	font-weight: 700;
 }
 
 .footer-logo {
@@ -399,6 +408,11 @@ footer {
 	width: 70px;
 }
 
+.copyright p {
+	font-family: var(--sub-heading-font);
+	font-size: var(--font-smmd);
+}
+
 /* 
 ===================================
 Media Queries (overriding styles for different screen sizes)
@@ -410,6 +424,70 @@ Feel free to change the min/max-width values to whatever you need. Use variables
 @media (max-width: 1300px) {
 	.hero-text h1 {
 		font-size: var(--font-lg);
+	}
+
+	/* Stay Updated */
+	.stay-updated {
+		padding: 30px;
+		width: 80%;
+	}
+
+	.stay-updated form {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+	.stay-updated form [type="submit"] {
+		margin: 15px 0;
+		width: fit-content;
+	}
+}
+
+@media (max-width: 1200px) {
+	/* Home Page Content */
+	.right-fade,
+	.left-fade {
+		background: none;
+	}
+
+	.homepage-content {
+		flex-direction: column;
+	}
+
+	/* this is for Home and About page */
+	.right-fade {
+		flex-direction: column-reverse;
+	}
+
+	.homepage-content img {
+		width: 100%;
+	}
+
+	.home-text,
+	.commitment .text-content {
+		background: rgba(0, 0, 0, 0.368);
+		border-radius: 30px;
+		padding: 30px;
+	}
+
+	/* About Page */
+	.commitment-img {
+		width: 100%;
+	}
+	.commitment .text-content {
+		width: 100%;
+	}
+}
+
+/* contact page mq */
+@media (max-width: 1140px) {
+	.contact-section {
+		width: 100%;
+		background-size: cover;
+	}
+
+	.stay-updated {
+		margin: 150px auto;
 	}
 }
 
@@ -427,6 +505,32 @@ Feel free to change the min/max-width values to whatever you need. Use variables
 
 /* Tablet & Smaller */
 @media (max-width: 768px) {
+	.wrapper {
+		width: 90%;
+	}
+	/* HERO SECTION */
+	.hero-content {
+		position: relative;
+		text-align: center;
+	}
+
+	.hero-text {
+		width: 90%;
+		background-image: none;
+		position: relative;
+		z-index: 1;
+	}
+
+	.hero-logo {
+		width: 90%;
+		position: absolute;
+		opacity: 0.3;
+	}
+
+	/* Stay Updated */
+	.stay-updated {
+		width: 90%;
+	}
 }
 
 /* Tablet Only */
@@ -443,4 +547,15 @@ Feel free to change the min/max-width values to whatever you need. Use variables
 
 /* Phone Only */
 @media (max-width: 480px) {
+	h1 {
+		font-size: var(--font-mobile-lg);
+	}
+
+	h2 {
+		font-size: var(--font-mobile-lg);
+	}
+
+	p {
+		font-size: var(--font-smmd);
+	}
 }
