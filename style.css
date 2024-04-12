@@ -53,6 +53,7 @@ Variables (colors, text, spacing, etc.)
 	--font-mobile-md: 1.313rem;
 	--font-mobile-lg: 2rem;
 	--font-sm: 1rem;
+	--font-smmd: 1.25rem;
 	--font-md: 1.5rem;
 	--font-lg: 3rem;
 	--font-xxl: 4rem;
@@ -106,12 +107,13 @@ img {
 
 /* Text */
 
-h1 {
+.main-headings {
 	font-family: var(--main-heading-font);
 	font-size: var(--font-xxl);
 }
 
-h2 {
+.sub-headings {
+	font-family: var(--sub-heading-font);
 	font-size: var(--font-lg);
 }
 
@@ -191,7 +193,8 @@ header {
 	align-items: center;
 }
 
-.top-logo p{
+.logo-text,
+.footer-logo p {
 	font-family: var(--main-heading-font);
 	font-weight: 700;
 }
@@ -218,7 +221,6 @@ header {
 
 .hero {
 	width: 70%;
-	height: 80vh;
 	margin: 0 auto;
 	display: flex;
 	align-items: center;
@@ -327,6 +329,10 @@ footer {
 	background-color: var(--color-slate-grey);
 }
 
+footer a:hover {
+	text-decoration: underline;
+}
+
 .footer-content {
 	width: 90%;
 	margin: 0 auto;
@@ -334,6 +340,12 @@ footer {
 	justify-content: space-between;
 	align-items: center;
 	color: var(--color-black);
+}
+
+.footer-content a {
+	font-family: var(--body-font);
+	color: #000;
+	font-weight: 700;
 }
 
 .footer-logo {
@@ -345,6 +357,10 @@ footer {
 
 .footer-logo img {
 	width: 70px;
+}
+
+.copyright p {
+	font-size: var(--font-smmd);
 }
 
 /* 
@@ -364,4 +380,15 @@ Feel free to change the min/max-width values to whatever you need. Use variables
 
 /* Phone Only */
 @media (max-width: 480px) {
+	.main-headings {
+		font-size: var(--font-mobile-lg);
+	}
+	
+	.sub-headings {
+		font-size: var(--font-mobile-lg);
+	}
+	
+	p {
+		font-size: var(--font-smmd);
+	}
 }
