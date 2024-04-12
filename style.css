@@ -44,9 +44,6 @@ Variables (colors, text, spacing, etc.)
 	--color-slate-grey: #e3e7e882;
 	--color-purple: #e041df;
 
-	/* Color Assignment */
-	--body-background-color: var(--color-white);
-
 	/* Text */
 	/* Font Sizes */
 	--font-mobile-sm: 0.9rem;
@@ -62,6 +59,7 @@ Variables (colors, text, spacing, etc.)
 	--sub-heading-font: "Josefin Sans", Helvetica, "Open Sans", Arial, sans-serif;
 	--body-font: "Inter", "Open Sans", Arial, sans-serif;
 	/* Line Height */
+	--line-reg: 35px;
 
 	/* Spacing */
 	--spacing-sm: 10px;
@@ -107,19 +105,22 @@ img {
 
 /* Text */
 
-.main-headings {
+h1 {
 	font-family: var(--main-heading-font);
 	font-size: var(--font-xxl);
+	margin-bottom: 0;
 }
 
-.sub-headings {
+h2 {
 	font-family: var(--sub-heading-font);
 	font-size: var(--font-lg);
+	margin-bottom: 0;
 }
 
 p {
 	font-family: var(--body-font);
 	font-size: var(--font-md);
+	line-height: var(--line-reg);
 }
 
 /* Links */
@@ -178,24 +179,19 @@ header {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	width: 90%;
-	margin: 30px auto;
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-}
+	}
 
 .top-logo {
 	display: flex;
 	gap: var(--spacing-sm);
 	align-items: center;
-	display: flex;
-	align-items: center;
+	
 }
 
-.logo-text,
+span.logo-text,
 .footer-logo p {
 	font-family: var(--main-heading-font);
+	font-size: var(--font-mobile-lg);
 	font-weight: 700;
 }
 
@@ -277,6 +273,7 @@ form {
 }
 
 input[type="text"] {
+	font-family: var(--body-font);
 	padding: var(--spacing-sm);
 	border: 1px solid var(--color-neutral-gray);
 	border-radius: var(--radius-md);
@@ -360,6 +357,7 @@ footer a:hover {
 }
 
 .copyright p {
+	font-family: var(--sub-heading-font);
 	font-size: var(--font-smmd);
 }
 
@@ -384,7 +382,7 @@ Feel free to change the min/max-width values to whatever you need. Use variables
 		font-size: var(--font-mobile-lg);
 	}
 	
-	.sub-headings {
+	h2 {
 		font-size: var(--font-mobile-lg);
 	}
 	
