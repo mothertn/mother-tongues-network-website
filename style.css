@@ -72,6 +72,7 @@ Variables (colors, text, spacing, etc.)
 	--radius-md: 20px;
 	
 	/* Wrappers */
+	--wrapper-max: 1400px
 
 	/* Media Queries */
 }
@@ -145,7 +146,7 @@ Wrappers (container, flexbox, etc.)
 
 /* Wrappers */
 .wrapper {
-	max-width: 1728px;
+	max-width: var(--wrapper-max);
 	width: 85%;
 }
 /* 
@@ -289,6 +290,7 @@ header {
 /* STAY UPDATED */
 .stay-updated {
 	width: 65%;
+	max-width: 1120px;
 	margin: 200px auto;
 	text-align: center;
 	background: rgba(0, 0, 0, 0.368);
