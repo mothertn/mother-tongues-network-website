@@ -241,7 +241,7 @@ header {
 }
 
 .hero-text {
-	width: 60%;
+	width: 680px;
 	padding: 70px 150px;
 	background-image: url(./assets/home-blob.svg);
 	background-size: contain;
@@ -384,12 +384,27 @@ Feel free to change the min/max-width values to whatever you need. Use variables
 ===================================
 */
 
+/* Home Page Hero */
+@media (max-width: 1300px) {
+	.hero-text h1 {
+		font-size: var(--font-lg);
+	}
+}
+
 /* Tablet & Smaller */
 @media (max-width: 768px) {
 }
 
 /* Tablet Only */
 @media (min-width: 768px) and (max-width: 1024px) {
+	.hero-text {
+		padding: 70px 90px;
+    	width: 500px;
+	}
+
+	.hero-text h1 {
+		font-size: var(--font-mobile-lg);
+	}
 }
 
 /* Phone Only */
