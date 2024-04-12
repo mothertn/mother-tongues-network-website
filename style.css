@@ -83,7 +83,7 @@ Global Styles (html, body, text, links, etc.)
 */
 
 html {
-	font-size: var(--font16);
+	font-size: var(--font-sm);
 }
 
 body {
@@ -108,16 +108,16 @@ img {
 
 h1 {
 	font-family: var(--main-heading-font);
-	font-size: var(--font64);
+	font-size: var(--font-xxl);
 }
 
 h2 {
-	font-size: var(--font48);
+	font-size: var(--font-lg);
 }
 
 p {
 	font-family: var(--body-font);
-	font-size: var(--font24);
+	font-size: var(--font-md);
 }
 
 /* Links */
@@ -222,7 +222,7 @@ header {
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	gap: 20px;
+	gap: var(--spacing-md);
 }
 
 .hero-text {
@@ -248,7 +248,6 @@ header {
 }
 
 .home-text {
-	background-color: var(--color-transparent-white);
 	padding: var(--spacing-lg);
 	border-radius: var(--radius-sm);
 }
