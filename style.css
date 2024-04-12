@@ -44,15 +44,13 @@ Variables (colors, text, spacing, etc.)
 	--color-slate-grey: #e3e7e882;
 	--color-purple: #e041df;
 
-	/* Color Assignment */
-	--body-background-color: var(--color-white);
-
 	/* Text */
 	/* Font Sizes */
 	--font-mobile-sm: 0.9rem;
 	--font-mobile-md: 1.313rem;
 	--font-mobile-lg: 2rem;
 	--font-sm: 1rem;
+	--font-smmd: 1.25rem;
 	--font-md: 1.5rem;
 	--font-lg: 3rem;
 	--font-xxl: 4rem;
@@ -61,6 +59,7 @@ Variables (colors, text, spacing, etc.)
 	--sub-heading-font: "Josefin Sans", Helvetica, "Open Sans", Arial, sans-serif;
 	--body-font: "Inter", "Open Sans", Arial, sans-serif;
 	/* Line Height */
+	--line-reg: 35px;
 
 	/* Spacing */
 	--spacing-sm: 10px;
@@ -110,15 +109,19 @@ img {
 h1 {
 	font-family: var(--main-heading-font);
 	font-size: var(--font-xxl);
+	margin-bottom: 0;
 }
 
 h2 {
+	font-family: var(--sub-heading-font);
 	font-size: var(--font-lg);
+	margin-bottom: 0;
 }
 
 p {
 	font-family: var(--body-font);
 	font-size: var(--font-md);
+	line-height: var(--line-reg);
 }
 
 /* Links */
@@ -181,23 +184,19 @@ header {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	width: 90%;
-	margin: 30px auto;
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-}
+	}
 
 .top-logo {
 	display: flex;
 	gap: var(--spacing-sm);
 	align-items: center;
-	display: flex;
-	align-items: center;
+	
 }
 
-.top-logo p{
+span.logo-text,
+.footer-logo p {
 	font-family: var(--main-heading-font);
+	font-size: var(--font-mobile-lg);
 	font-weight: 700;
 }
 
@@ -226,9 +225,8 @@ header {
 /* HERO SECTION */
 
 .hero {
-	width: 90%;
-	height: 80vh;
-	margin: 80px auto;
+	width: 70%;
+	margin: 0 auto;
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -306,6 +304,7 @@ form {
 }
 
 input[type="text"] {
+	font-family: var(--body-font);
 	padding: var(--spacing-sm);
 	border: 1px solid var(--color-neutral-gray);
 	border-radius: var(--radius-md);
@@ -360,6 +359,10 @@ footer {
 	background-color: var(--color-slate-grey);
 }
 
+footer a:hover {
+	text-decoration: underline;
+}
+
 .footer-content {
 	width: 90%;
 	margin: 0 auto;
@@ -367,6 +370,12 @@ footer {
 	justify-content: space-between;
 	align-items: center;
 	color: var(--color-black);
+}
+
+.footer-content a {
+	font-family: var(--body-font);
+	color: #000;
+	font-weight: 700;
 }
 
 .footer-logo {
@@ -378,6 +387,11 @@ footer {
 
 .footer-logo img {
 	width: 70px;
+}
+
+.copyright p {
+	font-family: var(--sub-heading-font);
+	font-size: var(--font-smmd);
 }
 
 /* 
@@ -491,4 +505,15 @@ Feel free to change the min/max-width values to whatever you need. Use variables
 
 /* Phone Only */
 @media (max-width: 480px) {
+	h1 {
+		font-size: var(--font-mobile-lg);
+	}
+	
+	h2 {
+		font-size: var(--font-mobile-lg);
+	}
+	
+	p {
+		font-size: var(--font-smmd);
+	}
 }
