@@ -12,25 +12,44 @@ section {
     margin: 90px auto;
     display: flex;
     align-items: center;
-    gap: 80px;
+    gap: 20px;
 }
 
 section div {
     width: 50%;
 }
 
+/* commitment to authenticity */
+.commitment {
+    border-radius: 30px;
+}
+
+.commitment .text-content {
+    padding: 30px;
+}
+
+
+
 
 /* TEAM MEMBERS */
 .team-container {
-    width: 90%;
-    margin: 90px auto;
+    /* width: 95%; */
+    max-width: 1600px;
+    margin: 0 auto;
+    padding: 160px 0px;
+    background-image: url(./assets/team-blob.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
-.team-container h2 {
+.team-container h2, .team-container p {
     text-align: center;
 }
 
 .team-members {
+    width: 80%;
+    margin: 50px auto;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -49,14 +68,18 @@ section div {
 .person img {
     border: 5px white solid;
     border-radius: 50%;
-    width: 245px;
-    height: 245px;
+    width: 200px;
+    height: 200px;
     overflow: hidden;
     object-fit: cover;
 }
 
 .person h3 {
     font-size: 28px;
+}
+
+.person p {
+    margin: 2px;
 }
 
 /* Join us on our Mission */

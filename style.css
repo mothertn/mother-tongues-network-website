@@ -71,6 +71,7 @@ Variables (colors, text, spacing, etc.)
 	--radius-md: 20px;
 	
 	/* Wrappers */
+	--wrapper-max: 1400px
 
 	/* Media Queries */
 }
@@ -130,6 +131,10 @@ a {
 	text-decoration: none;
 }
 
+a:hover {
+	text-decoration: underline;
+}
+
 /* Lists */
 
 /* Forms */
@@ -144,8 +149,8 @@ Wrappers (container, flexbox, etc.)
 
 /* Wrappers */
 .wrapper {
-	max-width: 1728px;
-	width: 85%;
+	max-width: var(--wrapper-max);
+	width: 90%;
 }
 /* 
 ===================================
@@ -213,6 +218,10 @@ span.logo-text,
 	font-size: var(--font-md);
 }
 
+.top-links li a {
+	font-size: var(--font-md);
+}
+
 /* HERO SECTION */
 
 .hero {
@@ -231,25 +240,39 @@ span.logo-text,
 }
 
 .hero-text {
-	width: 50%;
+	width: 680px;
+	padding: 70px 150px;
+	background-image: url(./assets/home-blob.svg);
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
 }
 .hero-logo {
-	width: 50%;
+	width: 40%;
 	display: flex;
 	justify-content: center;
 	align-items: center;
 }
 
-.hero-logo img {
+/* .hero-logo img {
 	max-width: 650px;
+} */
+
+.left-fade {
+	background: linear-gradient(to left, rgba(0, 0, 0, 0.368), transparent 70%);
 }
+
+.right-fade {
+	background: linear-gradient(to right, rgba(0, 0, 0, 0.368), transparent 70%);
+}
+
 
 /* HOMEPAGE MAIN CONTENT */
 .homepage-content {
-	width: 80%;
 	margin: 60px auto;
 	display: flex;
-	gap: 80px;
+	gap: 20px;
+	border-radius: 30px;
 }
 
 .home-text {
@@ -263,9 +286,17 @@ span.logo-text,
 
 /* STAY UPDATED */
 .stay-updated {
-	width: 50%;
+	width: 65%;
+	max-width: 1120px;
 	margin: 200px auto;
 	text-align: center;
+	background: rgba(0, 0, 0, 0.368);
+	border-radius: 30px;
+	padding: 50px 80px;
+}
+
+.stay-updated h2 {
+	margin: 0;
 }
 
 form {
@@ -279,9 +310,11 @@ input[type="text"] {
 	border-radius: var(--radius-md);
 }
 
+.stay-updated [type="submit"] {
+	margin-left: var(--spacing-sm);
+}
 [type="submit"],
 button {
-	margin-left: var(--spacing-sm);
 	padding: 10px 30px;
 	border: none;
 	border-radius: var(--radius-md);
@@ -368,12 +401,106 @@ Feel free to change the min/max-width values to whatever you need. Use variables
 ===================================
 */
 
+/* Home Page Hero */
+@media (max-width: 1300px) {
+	.hero-text h1 {
+		font-size: var(--font-lg);
+	}
+
+	/* Stay Updated */
+	.stay-updated {
+		padding: 30px;
+		width: 80%;
+	}
+
+	.stay-updated form {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+	.stay-updated form [type="submit"] {
+		margin: 15px 0;
+		width: fit-content;
+	}
+}
+
+@media (max-width: 1200px) {
+	/* Home Page Content */
+	.right-fade, .left-fade {
+		background: none;
+	}
+
+	.homepage-content {
+		flex-direction: column;
+	}
+
+	/* this is for Home and About page */
+	.right-fade {
+		flex-direction: column-reverse;
+	}
+
+	.homepage-content img {
+		width: 100%;
+	}
+
+	.home-text, .commitment .text-content {
+		background: rgba(0, 0, 0, 0.368);
+		border-radius: 30px;
+		padding: 30px;
+	}
+
+	/* About Page */
+	.commitment-img {
+		width: 100%;
+	}
+	.commitment .text-content {
+		width: 100%;
+	}
+
+}
+
 /* Tablet & Smaller */
 @media (max-width: 768px) {
+
+	.wrapper {
+		width: 90%;
+	}
+	/* HERO SECTION */
+	.hero-content {
+		position: relative;
+		text-align: center;
+	}
+
+	.hero-text {
+		width: 90%;
+		background-image: none;
+		position: relative;
+		z-index: 1;
+	}
+
+	.hero-logo {
+		width: 90%;
+		position: absolute;
+		opacity: 0.3;
+	}
+
+	/* Stay Updated */
+	.stay-updated {
+		width: 90%;
+	}
+	
 }
 
 /* Tablet Only */
 @media (min-width: 768px) and (max-width: 1024px) {
+	.hero-text {
+		padding: 70px 90px;
+    	width: 500px;
+	}
+
+	.hero-text h1 {
+		font-size: var(--font-mobile-lg);
+	}
 }
 
 /* Phone Only */
