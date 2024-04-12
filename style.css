@@ -191,6 +191,11 @@ header {
 	align-items: center;
 }
 
+.top-logo p{
+	font-family: var(--main-heading-font);
+	font-weight: 700;
+}
+
 .top-logo img {
 	width: 70px;
 }
@@ -205,6 +210,8 @@ header {
 .top-links li {
 	list-style-type: none;
 	padding: var(--spacing-sm);
+	font-family: var(--body-font);
+	font-size: var(--font-md);
 }
 
 /* HERO SECTION */
