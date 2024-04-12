@@ -57,7 +57,7 @@ Variables (colors, text, spacing, etc.)
 	--font-lg: 3rem;
 	--font-xxl: 4rem;
 	/* Font Family */
-	--main-heading-font: "Cinzel", serif;
+	--main-heading-font: "Cinzel", Georgia, serif;
 	--sub-heading-font: "Josefin Sans", Helvetica, "Open Sans", Arial, sans-serif;
 	--body-font: "Inter", "Open Sans", Arial, sans-serif;
 	/* Line Height */
@@ -142,6 +142,7 @@ Wrappers (container, flexbox, etc.)
 /* Wrappers */
 .wrapper {
 	max-width: 1728px;
+	width: 85%;
 }
 /* 
 ===================================
