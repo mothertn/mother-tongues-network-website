@@ -34,9 +34,10 @@ section div {
 /* TEAM MEMBERS */
 .team-container {
     width: 95%;
+    max-width: 1600px;
     margin: 90px auto;
     padding: 130px 0px;
-    background-image: url(./assets/team-svg.svg);
+    background-image: url(./assets/team-blob.svg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
