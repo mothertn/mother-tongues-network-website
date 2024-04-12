@@ -127,6 +127,10 @@ a {
 	text-decoration: none;
 }
 
+a:hover {
+	text-decoration: underline;
+}
+
 /* Lists */
 
 /* Forms */
@@ -214,12 +218,16 @@ header {
 	font-size: var(--font-md);
 }
 
+.top-links li a {
+	font-size: var(--font-md);
+}
+
 /* HERO SECTION */
 
 .hero {
-	width: 70%;
+	width: 90%;
 	height: 80vh;
-	margin: 0 auto;
+	margin: 80px auto;
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -233,18 +241,32 @@ header {
 }
 
 .hero-text {
-	width: 50%;
+	width: 680px;
+	padding: 70px 150px;
+	background-image: url(./assets/home-blob.svg);
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
 }
 .hero-logo {
-	width: 50%;
+	width: 40%;
 	display: flex;
 	justify-content: center;
 	align-items: center;
 }
 
-.hero-logo img {
+/* .hero-logo img {
 	max-width: 650px;
+} */
+
+.left-fade {
+	background: linear-gradient(to left, rgba(0, 0, 0, 0.368), transparent 70%);
 }
+
+.right-fade {
+	background: linear-gradient(to right, rgba(0, 0, 0, 0.368), transparent 70%);
+}
+
 
 /* HOMEPAGE MAIN CONTENT */
 .homepage-content {
@@ -252,6 +274,7 @@ header {
 	margin: 60px auto;
 	display: flex;
 	gap: 80px;
+	border-radius: 30px;
 }
 
 .home-text {
@@ -265,9 +288,16 @@ header {
 
 /* STAY UPDATED */
 .stay-updated {
-	width: 50%;
+	width: 65%;
 	margin: 200px auto;
 	text-align: center;
+	background: rgba(0, 0, 0, 0.368);
+	border-radius: 30px;
+	padding: 50px 80px;
+}
+
+.stay-updated h2 {
+	margin: 0;
 }
 
 form {
@@ -354,12 +384,27 @@ Feel free to change the min/max-width values to whatever you need. Use variables
 ===================================
 */
 
+/* Home Page Hero */
+@media (max-width: 1300px) {
+	.hero-text h1 {
+		font-size: var(--font-lg);
+	}
+}
+
 /* Tablet & Smaller */
 @media (max-width: 768px) {
 }
 
 /* Tablet Only */
 @media (min-width: 768px) and (max-width: 1024px) {
+	.hero-text {
+		padding: 70px 90px;
+    	width: 500px;
+	}
+
+	.hero-text h1 {
+		font-size: var(--font-mobile-lg);
+	}
 }
 
 /* Phone Only */
