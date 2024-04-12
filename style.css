@@ -212,7 +212,7 @@ header {
 }
 
 .top-links li a {
-	font-size: var(--font24);
+	font-size: var(--font-md);
 }
 
 /* HERO SECTION */
