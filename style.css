@@ -378,7 +378,7 @@ Feel free to change the min/max-width values to whatever you need. Use variables
 
 /* Phone Only */
 @media (max-width: 480px) {
-	.main-headings {
+	h1 {
 		font-size: var(--font-mobile-lg);
 	}
 	
