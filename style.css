@@ -19,6 +19,7 @@ Resets (box-sizing, normalize, etc.)
 
 html {
 	box-sizing: border-box;
+	scroll-behavior: smooth;
 }
 
 *,
@@ -159,6 +160,28 @@ Global Component Styles (buttons, forms, etc.)
 */
 
 /* Buttons */
+/* back to top button */
+#topBtn {
+	display: none;
+	position: fixed;
+	bottom: 20px;
+	right: 30px;
+	z-index: 99;
+	border: none;
+	outline: none;
+	background-color: transparent; 
+	cursor: pointer;
+	padding: 0; 
+  }
+  
+  #topBtn img {
+	width: 50px; 
+	height: 50px;
+  }
+  
+  #topBtn:hover img {
+	filter: grayscale(100%); 
+  }
 
 /* Forms */
 
@@ -372,7 +395,7 @@ button {
 /* FOOTER */
 footer {
 	width: 100%;
-	height: 80px;
+	
 	margin: 0 auto;
 	display: flex;
 	background-color: var(--color-slate-grey);
@@ -408,9 +431,16 @@ footer a:hover {
 	width: 70px;
 }
 
-.copyright p {
+.copyright {
+	padding-bottom: 25px;
+}
+
+.copyright p,
+.copyright span {
+
 	font-family: var(--sub-heading-font);
 	font-size: var(--font-smmd);
+	margin-bottom: 0;
 }
 
 /* 
