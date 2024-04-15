@@ -149,7 +149,7 @@ section .text-content {
 @media (max-width: 768px) {
     .team-container {
         background-image: none;
-        padding-bottom: 230px;
+        padding-bottom: 50px;
     }
 
     .team-title {
