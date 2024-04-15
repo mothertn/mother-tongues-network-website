@@ -353,7 +353,6 @@ button {
 /* FOOTER */
 footer {
 	width: 100%;
-	height: 80px;
 	margin: 0 auto;
 	display: flex;
 	background-color: var(--color-slate-grey);
@@ -388,10 +387,33 @@ footer a:hover {
 .footer-logo img {
 	width: 70px;
 }
+.footer-title {
+	display: flex;
+	flex-direction: column;
+	}
 
-.copyright p {
+.footer-title p,
+.footer-title span {
+	margin-top: 0;
+	margin-bottom: 0;
+}
+
+.footer-title span {
+	font-family: var(--main-heading-font);
+	font-size: var(--font-smmd);
+	font-weight: 700;
+}
+
+.copyright {
+	padding-bottom: 25px;
+}
+
+.copyright p,
+.copyright span {
+
 	font-family: var(--sub-heading-font);
 	font-size: var(--font-smmd);
+	margin-bottom: 0;
 }
 
 /* 
