@@ -48,7 +48,7 @@ section .text-content {
 }
 
 .team-members {
-    width: 80%;
+    width: 90%;
     margin: 50px auto;
     display: flex;
     flex-wrap: wrap;
@@ -125,19 +125,23 @@ section .text-content {
  /* Tablet Only */
     @media (min-width: 768px) and (max-width: 1024px) {
 
-        .team-members {
-            gap: 100px;
-        }
-        .person {
-            flex-basis: 100%;
-            display: flex;
-            flex-direction: row;
-            justify-content: center;
-            gap: 80px;
+    .team-members {
+        gap: 100px;
+    }
+    .person {
+        flex-basis: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 80px;
     }
 
     .picture-right {
         flex-direction: row-reverse;
+    }
+
+    .person h3 {
+        margin: 0 0 20px 0;
     }
 }
 

@@ -248,7 +248,7 @@ span.logo-text,
 /* HERO SECTION */
 
 .hero {
-	margin: 0 auto;
+	margin: 80px auto;
 	display: flex;
 	align-items: center;
 	justify-content: center;
