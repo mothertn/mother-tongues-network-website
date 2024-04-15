@@ -169,19 +169,19 @@ Global Component Styles (buttons, forms, etc.)
 	z-index: 99;
 	border: none;
 	outline: none;
-	background-color: transparent; 
+	background-color: transparent;
 	cursor: pointer;
-	padding: 0; 
-  }
-  
-  #topBtn img {
-	width: 50px; 
+	padding: 0;
+}
+
+#topBtn img {
+	width: 50px;
 	height: 50px;
-  }
-  
-  #topBtn:hover img {
-	filter: grayscale(100%); 
-  }
+}
+
+#topBtn:hover img {
+	filter: grayscale(100%);
+}
 
 /* Forms */
 
@@ -395,7 +395,7 @@ button {
 /* FOOTER */
 footer {
 	width: 100%;
-	
+
 	margin: 0 auto;
 	display: flex;
 	background-color: var(--color-slate-grey);
@@ -437,7 +437,6 @@ footer a:hover {
 
 .copyright p,
 .copyright span {
-
 	font-family: var(--sub-heading-font);
 	font-size: var(--font-smmd);
 	margin-bottom: 0;
@@ -506,18 +505,6 @@ Feel free to change the min/max-width values to whatever you need. Use variables
 	}
 	.commitment .text-content {
 		width: 100%;
-	}
-}
-
-/* contact page mq */
-@media (max-width: 1140px) {
-	.contact-section {
-		width: 100%;
-		background-size: cover;
-	}
-
-	.stay-updated {
-		margin: 150px auto;
 	}
 }
 
