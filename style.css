@@ -376,7 +376,6 @@ button {
 /* FOOTER */
 footer {
 	width: 100%;
-	
 	margin: 0 auto;
 	display: flex;
 	background-color: var(--color-slate-grey);
@@ -432,9 +431,6 @@ footer a:hover {
 	padding-bottom: 25px;
 }
 
-.copyright {
-	padding-bottom: 25px;
-}
 
 .copyright p,
 .copyright span {
@@ -566,4 +562,25 @@ Feel free to change the min/max-width values to whatever you need. Use variables
 	p {
 		font-size: var(--font-smmd);
 	}
+
+	.footer-content {
+		flex-direction: column;
+		padding-top: 20px;
+	}
+
+	.footer-title p {
+		font-size: 18px;
+	}
+	.footer-title span {
+		font-size: 14px;
+	}
+
+	.copyright {
+		display: flex;
+		flex-direction: row;
+	}
+	.copyright p {
+	font-size: 14px;
+}
+
 }
