@@ -353,7 +353,7 @@ button {
 /* FOOTER */
 footer {
 	width: 100%;
-	height: 80px;
+	
 	margin: 0 auto;
 	display: flex;
 	background-color: var(--color-slate-grey);
@@ -389,9 +389,16 @@ footer a:hover {
 	width: 70px;
 }
 
-.copyright p {
+.copyright {
+	padding-bottom: 25px;
+}
+
+.copyright p,
+.copyright span {
+
 	font-family: var(--sub-heading-font);
 	font-size: var(--font-smmd);
+	margin-bottom: 0;
 }
 
 /* 
