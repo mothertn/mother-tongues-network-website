@@ -248,28 +248,36 @@ span.logo-text,
 /* HERO SECTION */
 
 .hero {
-	width: 70%;
 	margin: 0 auto;
 	display: flex;
 	align-items: center;
 	justify-content: center;
 }
 
+
 .hero-content {
 	display: flex;
 	align-items: center;
 	justify-content: center;
 	gap: var(--spacing-md);
+	
 }
 
+
 .hero-text {
-	width: 680px;
-	padding: 70px 150px;
-	background-image: url(./assets/home-blob.svg);
-	background-size: contain;
-	background-repeat: no-repeat;
-	background-position: center;
+	width: 60%;
+	padding: 70px 130px 70px 100px;
+	position: relative;
 }
+.hero-blob {
+	width: 100%;
+	position: absolute;
+	transform: translate(-50%, -50%);
+	top: 50%;
+	left: 50%;
+}
+
+
 .hero-logo {
 	width: 40%;
 	display: flex;
@@ -488,6 +496,9 @@ Feel free to change the min/max-width values to whatever you need. Use variables
 		width: 90%;
 	}
 	/* HERO SECTION */
+	.hero {
+		margin: 100px auto;
+	}
 	.hero-content {
 		position: relative;
 		text-align: center;
@@ -495,13 +506,23 @@ Feel free to change the min/max-width values to whatever you need. Use variables
 
 	.hero-text {
 		width: 90%;
+		padding: 0;
 		background-image: none;
 		position: relative;
 		z-index: 1;
 	}
 
+	.hero-blob {
+		display: none;
+	}
+
+	.hero-text h1 {
+		font-size: var(--font-mobile-lg);
+	}
+
 	.hero-logo {
 		width: 90%;
+		max-width: 400px;
 		position: absolute;
 		opacity: 0.3;
 	}
