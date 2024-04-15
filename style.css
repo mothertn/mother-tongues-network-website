@@ -449,14 +449,6 @@ Feel free to change the min/max-width values to whatever you need. Use variables
 		padding: 30px;
 	}
 
-	/* About Page */
-	.commitment-img {
-		width: 100%;
-	}
-	.commitment .text-content {
-		width: 100%;
-	}
-
 }
 
 /* Tablet & Smaller */
