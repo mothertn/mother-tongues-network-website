@@ -37,9 +37,9 @@ window.onscroll = function () {
 
 function scrollFunction() {
 	if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-		topBtn.style.display = "block";
+		topBtn.classList.add("active");
 	} else {
-		topBtn.style.display = "none";
+		topBtn.classList.remove("active");
 	}
 }
 
