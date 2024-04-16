@@ -439,6 +439,8 @@ footer a:hover {
 	justify-content: space-between;
 	align-items: center;
 	color: var(--color-black);
+	gap: 10px;
+	margin-top: 10px;
 }
 
 .footer-content a {
@@ -488,6 +490,7 @@ footer a:hover {
 	margin-bottom: 0;
 	margin-top: 0;
 	line-height: 1;
+	
 }
 
 /* 
@@ -644,27 +647,23 @@ Feel free to change the min/max-width values to whatever you need. Use variables
 		width: 90%;
 	}
 
-		/* footer for tablet and phone */
-		.footer-content {
-			margin-top: var(--spacing-md);
-			margin-bottom: var(--spacing-md);
-		}
-	
-		.footer-title p {
-			font-size: var(--font-smmd);
-			line-height: 1;
-		}
-		.footer-title span {
-			font-size: var(--font-mobile-sm);
-		}
-	
-		.copyright {
-			padding-bottom: 0;
-			margin-top: 0;
-		}
-		.copyright p {
+	/* footer for tablet and phone */
+
+	.footer-title p {
+		font-size: var(--font-smmd);
+		line-height: 1;
+	}
+	.footer-title span {
 		font-size: var(--font-mobile-sm);
 	}
+
+	.copyright {
+		padding-bottom: 0;
+		margin-top: 0;
+	}
+	.copyright p {
+	font-size: var(--font-mobile-sm);
+}
 }
 
 /* Tablet Only */
@@ -702,11 +701,12 @@ Feel free to change the min/max-width values to whatever you need. Use variables
 	}
 	.copyright {
 		display: flex;
-		gap: 10px;
+		gap: var(--spacing-sm);
 		
 	}
 	.copyright p {
 		font-size: 12px;
+		padding-bottom: 5px;
 	}
 
 }
