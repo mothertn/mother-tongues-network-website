@@ -53,7 +53,6 @@ function topFunction() {
 // TEAM MODALS
 
 // close modal
-
 const closeModal = function () {
 	liannaModal.classList.add("hidden");
 	mirandaModal.classList.add("hidden");
@@ -62,13 +61,13 @@ const closeModal = function () {
 	trishModal.classList.add("hidden");
 	charliModal.classList.add("hidden");
 	document.body.classList.remove("fixed");
+	topBtn.classList.remove("hidden");
   };
 
 var closeBtn = document.querySelectorAll(".close-btn");
 closeBtn.forEach( (btn) => {
 	btn.addEventListener("click", closeModal);
   })
-
   
 
 // Lianna modal
@@ -78,6 +77,7 @@ var liannaModal = document.getElementById("lianna-modal");
 liannaImg.addEventListener("click", function() {
 	liannaModal.classList.remove("hidden");
 	document.body.classList.add("fixed");
+	topBtn.classList.add("hidden");
 });
 
 // Miranda modal
@@ -87,6 +87,7 @@ var mirandaModal = document.getElementById("miranda-modal");
 mirandaImg.addEventListener("click", function() {
 	mirandaModal.classList.remove("hidden");
 	document.body.classList.add("fixed");
+	topBtn.classList.add("hidden");
 });
 
 // Kyla modal
@@ -96,6 +97,7 @@ var kylaModal = document.getElementById("kyla-modal");
 kylaImg.addEventListener("click", function() {
 	kylaModal.classList.remove("hidden");
 	document.body.classList.add("fixed");
+	topBtn.classList.add("hidden");
 });
 
 // Max modal
@@ -105,6 +107,7 @@ var maxModal = document.getElementById("max-modal");
 maxImg.addEventListener("click", function() {
 	maxModal.classList.remove("hidden");
 	document.body.classList.add("fixed");
+	topBtn.classList.add("hidden");
 });
 
 // Trish modal
@@ -114,6 +117,7 @@ var trishModal = document.getElementById("trish-modal");
 trishImg.addEventListener("click", function() {
 	trishModal.classList.remove("hidden");
 	document.body.classList.add("fixed");
+	topBtn.classList.add("hidden");
 });
 
 // Charli modal
@@ -123,4 +127,5 @@ var charliModal = document.getElementById("charli-modal");
 charliImg.addEventListener("click", function() {
 	charliModal.classList.remove("hidden");
 	document.body.classList.add("fixed");
+	topBtn.classList.add("hidden");
 });

@@ -107,9 +107,9 @@ section .text-content {
     width: 90%;
     max-width: 1200px;
     height: fit-content;
-    max-height: 90vh;
+    max-height: 95vh;
     margin: 0 auto;
-    padding: 30px;
+    padding: 25px;
     background: rgb(140,82,255);
     background: linear-gradient(80deg, rgba(140,82,255,1) 23%, rgba(196,124,214,1) 84%);
     border-radius: 30px;
@@ -125,13 +125,35 @@ section .text-content {
 
 .close-btn {
     align-self: flex-end;
+    padding: 10px;
 }
 
+.close-btn:hover {
+    cursor: pointer;
+}
+
+.modal-img-box {
+    margin-top: -50px;
+}
 .modal-img {
-    width: 200px;
-    height: 200px;
+    width: 150px;
+    height: 150px;
+    border: 5px white solid;
     border-radius: 50%;
     object-fit: cover;
+}
+
+.modal h2 {
+    font-size: var(--font-mobile-lg);
+    margin-top: 10px;
+}
+
+.modal h3 {
+    text-align: center;
+    padding: 10px 15px;
+    margin: 10px;
+    background-color: rgba(0, 0, 0, 0.105);
+    border-radius: 20px;
 }
 
 .modal-scroll {
