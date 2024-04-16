@@ -97,6 +97,7 @@ body {
 		rgba(35, 34, 135, 1) 84%,
 		rgba(40, 104, 191, 1) 97%
 	);
+	min-height: 100vh;
 }
 
 /* Images */
@@ -169,7 +170,7 @@ Global Component Styles (buttons, forms, etc.)
 /* Buttons */
 /* back to top button */
 #topBtn {
-	display: none;
+	opacity: 0;
 	position: fixed;
 	bottom: 20px;
 	right: 30px;
@@ -179,6 +180,12 @@ Global Component Styles (buttons, forms, etc.)
 	background-color: transparent;
 	cursor: pointer;
 	padding: 0;
+	transition: opacity 0.4s;
+}
+
+#topBtn.active {
+	z-index: 99;
+	opacity: 1;
 }
 
 #topBtn img {
@@ -220,6 +227,12 @@ header {
 	display: flex;
 	gap: var(--spacing-sm);
 	align-items: center;
+	transition: text-shadow 0.4s;
+}
+
+.top-logo:hover {
+	text-decoration: none;
+	text-shadow: 0 0 10px var(--color-purple);
 }
 
 span.logo-text,
@@ -263,15 +276,12 @@ span.logo-text,
 	justify-content: center;
 }
 
-
 .hero-content {
 	display: flex;
 	align-items: center;
 	justify-content: center;
 	gap: var(--spacing-md);
-	
 }
-
 
 .hero-text {
 	width: 60%;
@@ -285,7 +295,6 @@ span.logo-text,
 	top: 50%;
 	left: 50%;
 }
-
 
 .hero-logo {
 	width: 40%;
