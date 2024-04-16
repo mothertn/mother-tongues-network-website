@@ -145,6 +145,13 @@ a:hover {
 Wrappers (container, flexbox, etc.)
 ===================================
 */
+.hidden {
+	display: none;
+}
+
+.visible {
+	display: block;
+}
 
 /* Container */
 
@@ -241,6 +248,10 @@ span.logo-text,
 
 .top-links li a {
 	font-size: var(--font-md);
+}
+
+.menuBtn {
+	display: none;
 }
 
 /* HERO SECTION */
@@ -533,6 +544,40 @@ Feel free to change the min/max-width values to whatever you need. Use variables
 	.wrapper {
 		width: 90%;
 	}
+
+	header {
+		position: relative;
+	}
+
+	.top-links {
+		position: absolute;
+		top: 80px;
+		right: 15px;
+		padding: 40px 30px;
+		background: navy;
+		border-radius: 20px;
+		flex-direction: column;
+		z-index: 3;
+	}
+
+	.top-links li {
+		margin: 20px;
+		border-bottom: 2px solid #e041df;
+		border-radius: 2px;
+	}
+	.nav-links-container {
+		display: none;
+	}
+
+	.nav-links-container.visible {
+		display: block;
+	}
+
+	.menuBtn {
+		display: block;
+		background-color: transparent;
+	}
+
 	/* HERO SECTION */
 	.hero {
 		margin: 100px auto;
