@@ -95,6 +95,51 @@ section .text-content {
 	text-align: center;
 }
 
+
+/* Modal */
+/* positioning for body to stop scroll when modal is open */
+.fixed {
+	overflow: hidden;
+}
+
+/* Team Member Modal */
+.modal {
+    width: 90%;
+    max-width: 1200px;
+    height: fit-content;
+    max-height: 90vh;
+    margin: 0 auto;
+    padding: 30px;
+    background: rgb(140,82,255);
+    background: linear-gradient(80deg, rgba(140,82,255,1) 23%, rgba(196,124,214,1) 84%);
+    border-radius: 30px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.close-btn {
+    align-self: flex-end;
+}
+
+.modal-img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.modal-scroll {
+    overflow-y: scroll;
+}
+
+
+
 /* Media Queries */
 @media (max-width: 1200px) {
 	.about-title {

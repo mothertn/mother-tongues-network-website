@@ -47,3 +47,34 @@ function topFunction() {
 	document.body.scrollTop = 0;
 	document.documentElement.scrollTop = 0;
 }
+
+
+
+// TEAM MODALS
+
+// close modal
+
+const closeModal = function () {
+	liannaModal.classList.add("hidden");
+	mirandModal.classList.add("hidden");
+	bodyTeam.classList.remove("fixed");
+  };
+
+var closeBtn = document.querySelectorAll(".close-btn");
+closeBtn.forEach( (btn) => {
+	btn.addEventListener("click", closeModal);
+  })
+
+  
+
+
+// Lianna modal
+var liannaImg = document.getElementById("lianna-img");
+var liannaModal = document.getElementById("lianna-modal");
+
+liannaImg.addEventListener("click", function() {
+	liannaModal.classList.remove("hidden");
+	document.body.classList.add("fixed");
+});
+
+
