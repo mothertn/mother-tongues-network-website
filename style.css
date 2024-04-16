@@ -38,7 +38,7 @@ Variables (colors, text, spacing, etc.)
 	/* Color Definitions */
 	--color-white: #fff;
 	--color-black: #000;
-	--color-beige: #F5F5DC;
+	--color-beige: #f5f5dc;
 	--color-navy: #000080;
 	--color-neutral-gray: #ccc;
 	--color-transparent-white: #ffffff2d;
@@ -70,9 +70,9 @@ Variables (colors, text, spacing, etc.)
 	/* Border Radius */
 	--radius-sm: 10px;
 	--radius-md: 20px;
-	
+
 	/* Wrappers */
-	--wrapper-max: 1400px
+	--wrapper-max: 1400px;
 
 	/* Media Queries */
 }
@@ -145,6 +145,13 @@ a:hover {
 Wrappers (container, flexbox, etc.)
 ===================================
 */
+.hidden {
+	display: none;
+}
+
+.visible {
+	display: block;
+}
 
 /* Container */
 
@@ -169,19 +176,19 @@ Global Component Styles (buttons, forms, etc.)
 	z-index: 99;
 	border: none;
 	outline: none;
-	background-color: transparent; 
+	background-color: transparent;
 	cursor: pointer;
-	padding: 0; 
-  }
-  
-  #topBtn img {
-	width: 50px; 
+	padding: 0;
+}
+
+#topBtn img {
+	width: 50px;
 	height: 50px;
-  }
-  
-  #topBtn:hover img {
-	filter: grayscale(100%); 
-  }
+}
+
+#topBtn:hover img {
+	filter: grayscale(100%);
+}
 
 /* Forms */
 
@@ -207,13 +214,12 @@ header {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	}
+}
 
 .top-logo {
 	display: flex;
 	gap: var(--spacing-sm);
 	align-items: center;
-	
 }
 
 span.logo-text,
@@ -231,7 +237,6 @@ span.logo-text,
 	display: flex;
 	align-items: center;
 	padding-left: 0;
-	
 }
 
 .top-links li {
@@ -245,31 +250,43 @@ span.logo-text,
 	font-size: var(--font-md);
 }
 
+.menuBtn {
+	display: none;
+}
+
 /* HERO SECTION */
 
 .hero {
-	width: 70%;
-	margin: 0 auto;
+	margin: 80px auto;
 	display: flex;
 	align-items: center;
 	justify-content: center;
 }
+
 
 .hero-content {
 	display: flex;
 	align-items: center;
 	justify-content: center;
 	gap: var(--spacing-md);
+	
 }
 
+
 .hero-text {
-	width: 680px;
-	padding: 70px 150px;
-	background-image: url(./assets/home-blob.svg);
-	background-size: contain;
-	background-repeat: no-repeat;
-	background-position: center;
+	width: 60%;
+	padding: 70px 130px 70px 100px;
+	position: relative;
 }
+.hero-blob {
+	width: 100%;
+	position: absolute;
+	transform: translate(-50%, -50%);
+	top: 50%;
+	left: 50%;
+}
+
+
 .hero-logo {
 	width: 40%;
 	display: flex;
@@ -288,7 +305,6 @@ span.logo-text,
 .right-fade {
 	background: linear-gradient(to right, rgba(0, 0, 0, 0.368), transparent 70%);
 }
-
 
 /* HOMEPAGE MAIN CONTENT */
 .homepage-content {
@@ -346,9 +362,30 @@ button {
 }
 
 /* contact form */
+.contact-section {
+	width: 95%;
+	max-width: 1600px;
+	margin: 0 auto;
+	padding: 163px 0px;
+	background-image: url(./assets/team-blob.svg);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	display: flex;
+	flex-direction: column;
+}
 .form-title {
 	text-align: center;
+	margin-bottom: 45px;
 }
+
+.form-title p {
+	max-width: 600px;
+	width: 85%;
+	margin: 0 auto;
+	text-align: center;
+}
+
 .form-info {
 	text-align: center;
 }
@@ -365,11 +402,12 @@ button {
 .contact-form input,
 .contact-form textarea {
 	font-family: var(--body-font);
-	width: 70%;
-	max-width: 500px;
+	width: 85%;
+	max-width: 600px;
 	border: none;
 	border-radius: 4px;
-	padding: var(--spacing-sm);
+	margin-bottom: 15px;
+	padding: 20px;
 	background-color: var(--color-white);
 }
 
@@ -434,7 +472,6 @@ footer a:hover {
 
 .copyright p,
 .copyright span {
-
 	font-family: var(--sub-heading-font);
 	font-size: var(--font-smmd);
 	margin-bottom: 0;
@@ -472,7 +509,8 @@ Feel free to change the min/max-width values to whatever you need. Use variables
 
 @media (max-width: 1200px) {
 	/* Home Page Content */
-	.right-fade, .left-fade {
+	.right-fade,
+	.left-fade {
 		background: none;
 	}
 
@@ -489,7 +527,8 @@ Feel free to change the min/max-width values to whatever you need. Use variables
 		width: 100%;
 	}
 
-	.home-text, .commitment .text-content {
+	.home-text,
+	.commitment .text-content {
 		background: rgba(0, 0, 0, 0.368);
 		border-radius: 30px;
 		padding: 30px;
@@ -502,16 +541,63 @@ Feel free to change the min/max-width values to whatever you need. Use variables
 	.commitment .text-content {
 		width: 100%;
 	}
+}
 
+/* contact page mq */
+@media (max-width: 1140px) {
+	.contact-section {
+		width: 100%;
+		background-size: cover;
+	}
+
+	.stay-updated {
+		margin: 150px auto;
+	}
 }
 
 /* Tablet & Smaller */
 @media (max-width: 768px) {
-
 	.wrapper {
 		width: 90%;
 	}
+
+	header {
+		position: relative;
+	}
+
+	.top-links {
+		position: absolute;
+		top: 80px;
+		right: 15px;
+		padding: 40px 30px;
+		background: navy;
+		border-radius: 20px;
+		flex-direction: column;
+		z-index: 3;
+	}
+
+	.top-links li {
+		margin: 20px;
+		border-bottom: 2px solid #e041df;
+		border-radius: 2px;
+	}
+	.nav-links-container {
+		display: none;
+	}
+
+	.nav-links-container.visible {
+		display: block;
+	}
+
+	.menuBtn {
+		display: block;
+		background-color: transparent;
+	}
+
 	/* HERO SECTION */
+	.hero {
+		margin: 100px auto;
+	}
 	.hero-content {
 		position: relative;
 		text-align: center;
@@ -519,13 +605,23 @@ Feel free to change the min/max-width values to whatever you need. Use variables
 
 	.hero-text {
 		width: 90%;
+		padding: 0;
 		background-image: none;
 		position: relative;
 		z-index: 1;
 	}
 
+	.hero-blob {
+		display: none;
+	}
+
+	.hero-text h1 {
+		font-size: var(--font-mobile-lg);
+	}
+
 	.hero-logo {
 		width: 90%;
+		max-width: 400px;
 		position: absolute;
 		opacity: 0.3;
 	}
@@ -534,14 +630,13 @@ Feel free to change the min/max-width values to whatever you need. Use variables
 	.stay-updated {
 		width: 90%;
 	}
-	
 }
 
 /* Tablet Only */
 @media (min-width: 768px) and (max-width: 1024px) {
 	.hero-text {
 		padding: 70px 90px;
-    	width: 500px;
+		width: 500px;
 	}
 
 	.hero-text h1 {
@@ -554,11 +649,11 @@ Feel free to change the min/max-width values to whatever you need. Use variables
 	h1 {
 		font-size: var(--font-mobile-lg);
 	}
-	
+
 	h2 {
 		font-size: var(--font-mobile-lg);
 	}
-	
+
 	p {
 		font-size: var(--font-smmd);
 	}
