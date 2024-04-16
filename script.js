@@ -56,8 +56,12 @@ function topFunction() {
 
 const closeModal = function () {
 	liannaModal.classList.add("hidden");
-	mirandModal.classList.add("hidden");
-	bodyTeam.classList.remove("fixed");
+	mirandaModal.classList.add("hidden");
+	kylaModal.classList.add("hidden");
+	maxModal.classList.add("hidden");
+	trishModal.classList.add("hidden");
+	charliModal.classList.add("hidden");
+	document.body.classList.remove("fixed");
   };
 
 var closeBtn = document.querySelectorAll(".close-btn");
@@ -66,7 +70,6 @@ closeBtn.forEach( (btn) => {
   })
 
   
-
 
 // Lianna modal
 var liannaImg = document.getElementById("lianna-img");
@@ -77,4 +80,47 @@ liannaImg.addEventListener("click", function() {
 	document.body.classList.add("fixed");
 });
 
+// Miranda modal
+var mirandaImg = document.getElementById("miranda-img");
+var mirandaModal = document.getElementById("miranda-modal");
 
+mirandaImg.addEventListener("click", function() {
+	mirandaModal.classList.remove("hidden");
+	document.body.classList.add("fixed");
+});
+
+// Kyla modal
+var kylaImg = document.getElementById("kyla-img");
+var kylaModal = document.getElementById("kyla-modal");
+
+kylaImg.addEventListener("click", function() {
+	kylaModal.classList.remove("hidden");
+	document.body.classList.add("fixed");
+});
+
+// Max modal
+var maxImg = document.getElementById("max-img");
+var maxModal = document.getElementById("max-modal");
+
+maxImg.addEventListener("click", function() {
+	maxModal.classList.remove("hidden");
+	document.body.classList.add("fixed");
+});
+
+// Trish modal
+var trishImg = document.getElementById("trish-img");
+var trishModal = document.getElementById("trish-modal");
+
+trishImg.addEventListener("click", function() {
+	trishModal.classList.remove("hidden");
+	document.body.classList.add("fixed");
+});
+
+// Charli modal
+var charliImg = document.getElementById("charli-img");
+var charliModal = document.getElementById("charli-modal");
+
+charliImg.addEventListener("click", function() {
+	charliModal.classList.remove("hidden");
+	document.body.classList.add("fixed");
+});
