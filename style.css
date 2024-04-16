@@ -643,6 +643,28 @@ Feel free to change the min/max-width values to whatever you need. Use variables
 	.stay-updated {
 		width: 90%;
 	}
+
+		/* footer for tablet and phone */
+		.footer-content {
+			margin-top: var(--spacing-md);
+			margin-bottom: var(--spacing-md);
+		}
+	
+		.footer-title p {
+			font-size: var(--font-smmd);
+			line-height: 1;
+		}
+		.footer-title span {
+			font-size: var(--font-mobile-sm);
+		}
+	
+		.copyright {
+			padding-bottom: 0;
+			margin-top: 0;
+		}
+		.copyright p {
+		font-size: var(--font-mobile-sm);
+	}
 }
 
 /* Tablet Only */
@@ -658,33 +680,6 @@ Feel free to change the min/max-width values to whatever you need. Use variables
 
 }
 
-@media (max-width: 890px) {
-
-	/* footer for tablet and phone */
-	.footer-content {
-		flex-direction: column;
-		margin-top: var(--spacing-md);
-		margin-bottom: var(--spacing-md);
-	}
-
-	.footer-title p {
-		font-size: var(--font-smmd);
-		line-height: 1;
-	}
-	.footer-title span {
-		font-size: var(--font-mobile-sm);
-	}
-
-	.copyright {
-		display: flex;
-		flex-direction: row;
-		gap: var(--spacing-sm);
-		padding-bottom: 0;
-		margin-top: 0;
-	}
-	.copyright p {
-	font-size: var(--font-mobile-sm);
-}}
 
 /* Phone Only */
 @media (max-width: 480px) {
@@ -698,6 +693,20 @@ Feel free to change the min/max-width values to whatever you need. Use variables
 
 	p {
 		font-size: var(--font-smmd);
+	}
+
+	/* footer */
+	.footer-content {
+		display: flex;
+		flex-direction: column;
+	}
+	.copyright {
+		display: flex;
+		gap: 10px;
+		
+	}
+	.copyright p {
+		font-size: 12px;
 	}
 
 }
