@@ -658,7 +658,7 @@ Feel free to change the min/max-width values to whatever you need. Use variables
 
 }
 
-@media (max-width: 870px) {
+@media (max-width: 890px) {
 
 	/* footer for tablet and phone */
 	.footer-content {
