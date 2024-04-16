@@ -15,7 +15,7 @@ section {
     gap: 20px;
 }
 
-section div {
+section .text-content {
     width: 50%;
 }
 
@@ -36,7 +36,7 @@ section div {
     /* width: 95%; */
     max-width: 1600px;
     margin: 0 auto;
-    padding: 160px 0px;
+    padding: 150px 0px;
     background-image: url(./assets/team-blob.svg);
     background-position: center;
     background-repeat: no-repeat;
@@ -48,7 +48,7 @@ section div {
 }
 
 .team-members {
-    width: 80%;
+    width: 90%;
     margin: 50px auto;
     display: flex;
     flex-wrap: wrap;
@@ -76,6 +76,7 @@ section div {
 
 .person h3 {
     font-size: 28px;
+    text-align: center;
 }
 
 .person p {
@@ -87,4 +88,98 @@ section div {
     width: 50%;
     margin: 80px auto;
     text-align: center;
+}
+
+/* Media Queries */
+@media (max-width: 1200px) {
+    .about-title {
+        flex-direction: column;
+    }
+
+    .about-title .title-img {
+        width: 100%;
+    }
+
+    .about-title .text-content {
+        width: 100%;
+        background: rgba(0, 0, 0, 0.368);
+		border-radius: 30px;
+		padding: 30px;
+    }
+    
+    .text-content h1 {
+        text-align: center;
+    }
+
+
+	.commitment-img {
+		width: 100%;
+	}
+	.commitment .text-content {
+		width: 100%;
+	}
+
+   
+}
+
+ /* Tablet Only */
+    @media (min-width: 768px) and (max-width: 1024px) {
+
+    .team-members {
+        gap: 100px;
+    }
+    .person {
+        flex-basis: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 80px;
+    }
+
+    .picture-right {
+        flex-direction: row-reverse;
+    }
+
+    .person h3 {
+        margin: 0 0 20px 0;
+    }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+    .team-container {
+        background-image: none;
+        padding: 50px 0;
+    }
+
+    .team-title {
+        width: 90%;
+        margin: 0 auto;
+		padding: 10px;
+        border-radius: 30px;
+        /* background: rgba(0, 0, 0, 0.368); */
+        background: linear-gradient(to bottom, rgba(0, 0, 0, 0.368), rgba(0, 0, 0, 0));
+    }
+
+    .team-title h2, .team-title p {
+        margin: 10px 0;
+    }
+    
+    .team-members {
+        margin: 20px auto;
+        width: 100%;
+        padding: 60px 0;
+        background-image: url(./assets/team-mobile.svg);
+        background-position: center;
+        background-size: cover;
+    }
+
+    .person {
+        flex-basis: 100%;
+        margin: 20px auto;
+    }
+
+    .person-text p {
+        display: none;
+    }
 }
