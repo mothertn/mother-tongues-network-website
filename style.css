@@ -548,16 +548,8 @@ Feel free to change the min/max-width values to whatever you need. Use variables
 	}
 }
 
-/* Tablet & Smaller */
-@media (max-width: 768px) {
-	.wrapper {
-		width: 90%;
-	}
-
-	header {
-		position: relative;
-	}
-
+@media (max-width: 1000px) {
+	/* hamburger bar */
 	.top-links {
 		position: absolute;
 		top: 80px;
@@ -587,6 +579,18 @@ Feel free to change the min/max-width values to whatever you need. Use variables
 	.menuBtn {
 		display: block;
 		background-color: transparent;
+	}
+	/* end of hamburger bar */
+}
+
+/* Tablet & Smaller */
+@media (max-width: 768px) {
+	.wrapper {
+		width: 90%;
+	}
+
+	header {
+		position: relative;
 	}
 
 	/* HERO SECTION */
