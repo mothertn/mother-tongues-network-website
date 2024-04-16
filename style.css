@@ -563,16 +563,18 @@ Feel free to change the min/max-width values to whatever you need. Use variables
 		top: 80px;
 		right: 15px;
 		padding: 40px 30px;
-		background: navy;
+		background: rgb(1, 1, 80);
 		border-radius: 20px;
 		flex-direction: column;
 		z-index: 3;
 	}
 
 	.top-links li {
+		width: 120px;
 		margin: 20px;
-		border-bottom: 2px solid #e041df;
-		border-radius: 2px;
+		border: 1px solid;
+		border-radius: 10px;
+		text-align: center;
 	}
 	.nav-links-container {
 		display: none;
