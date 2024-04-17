@@ -48,90 +48,42 @@ function topFunction() {
 	document.documentElement.scrollTop = 0;
 }
 
-
-
 // TEAM MODALS
 
 // close modal
 const closeModal = function () {
-	liannaModal.classList.add("hidden");
-	mirandaModal.classList.add("hidden");
-	kylaModal.classList.add("hidden");
-	maxModal.classList.add("hidden");
-	trishModal.classList.add("hidden");
-	charliModal.classList.add("hidden");
+	const modals = document.querySelectorAll(".modal");
+	modals.forEach(modal => {
+		modal.classList.add("hidden");
+	});
 	document.body.classList.remove("fixed");
 	topBtn.classList.remove("hidden");
-  };
+};
 
 var closeBtn = document.querySelectorAll(".close-btn");
-closeBtn.forEach( (btn) => {
+closeBtn.forEach(btn => {
 	btn.addEventListener("click", closeModal);
-  })
-  
-
-// Lianna modal
-var liannaImg = document.getElementById("lianna-img");
-var liannaModal = document.getElementById("lianna-modal");
-
-liannaImg.addEventListener("click", function() {
-	liannaModal.classList.remove("hidden");
-	document.body.classList.add("fixed");
-	topBtn.classList.add("hidden");
 });
 
-// Miranda modal
-var mirandaImg = document.getElementById("miranda-img");
-var mirandaModal = document.getElementById("miranda-modal");
-
-mirandaImg.addEventListener("click", function() {
-	mirandaModal.classList.remove("hidden");
-	document.body.classList.add("fixed");
-	topBtn.classList.add("hidden");
-});
-
-// Kyla modal
-var kylaImg = document.getElementById("kyla-img");
-var kylaModal = document.getElementById("kyla-modal");
-
-kylaImg.addEventListener("click", function() {
-	kylaModal.classList.remove("hidden");
-	document.body.classList.add("fixed");
-	topBtn.classList.add("hidden");
-});
-
-// Max modal
-var maxImg = document.getElementById("max-img");
-var maxModal = document.getElementById("max-modal");
-
-maxImg.addEventListener("click", function() {
-	maxModal.classList.remove("hidden");
-	document.body.classList.add("fixed");
-	topBtn.classList.add("hidden");
-});
-
-// Trish modal
-var trishImg = document.getElementById("trish-img");
-var trishModal = document.getElementById("trish-modal");
-
-trishImg.addEventListener("click", function() {
-	trishModal.classList.remove("hidden");
-	document.body.classList.add("fixed");
-	topBtn.classList.add("hidden");
-});
-
-// Charli modal
-var charliImg = document.getElementById("charli-img");
-var charliModal = document.getElementById("charli-modal");
-
-charliImg.addEventListener("click", function() {
-	charliModal.classList.remove("hidden");
-	document.body.classList.add("fixed");
-	topBtn.classList.add("hidden");
+// Open modal
+var teamMembers = document.querySelectorAll(".person");
+teamMembers.forEach(member => {
+	member.addEventListener("click", function () {
+		var modalId = member.getAttribute("data-modal");
+		var modal = document.getElementById(modalId);
+		modal.classList.remove("hidden");
+		document.body.classList.add("fixed");
+		topBtn.classList.add("hidden");
+	});
 });
 
 document.addEventListener("keydown", function (e) {
-	if (e.key === "Escape" && (!liannaModal.classList.contains("hidden") || !mirandaModal.classList.contains("hidden") || !kylaModal.classList.contains("hidden") || !maxModal.classList.contains("hidden") || !trishModal.classList.contains("hidden") || !charliModal.classList.contains("hidden"))) {
-	  closeModal();
+	if (e.key === "Escape") {
+		const modals = document.querySelectorAll(".modal");
+		modals.forEach(modal => {
+			if (!modal.classList.contains("hidden")) {
+				closeModal();
+			}
+		});
 	}
-  });
+});
