@@ -321,6 +321,7 @@ span.logo-text,
 .homepage-content {
 	margin: 60px auto;
 	display: flex;
+	align-items: center;
 	gap: 20px;
 	border-radius: 30px;
 }
@@ -328,10 +329,18 @@ span.logo-text,
 .home-text {
 	padding: var(--spacing-lg);
 	border-radius: var(--radius-sm);
+	width: 50%;
 }
 
-.homepage-content img {
+.border-radius img {
+	width: 100%;
+	border-radius: 30px;
+}
+
+.border-radius {
 	width: 50%;
+	object-fit: contain;
+	border-radius: 30px;
 }
 
 /* STAY UPDATED */
@@ -464,7 +473,7 @@ footer a:hover {
 .footer-title {
 	display: flex;
 	flex-direction: column;
-	}
+}
 
 .footer-title p,
 .footer-title span {
@@ -483,7 +492,6 @@ footer a:hover {
 	margin-top: 20px;
 }
 
-
 .copyright p {
 	display: flex;
 	flex-direction: column;
@@ -492,7 +500,6 @@ footer a:hover {
 	margin-bottom: 0;
 	margin-top: 0;
 	line-height: 1;
-	
 }
 
 /* 
@@ -550,6 +557,12 @@ Feel free to change the min/max-width values to whatever you need. Use variables
 		background: rgba(0, 0, 0, 0.368);
 		border-radius: 30px;
 		padding: 30px;
+	}
+
+	.border-radius,
+	.text-content,
+	.home-text {
+		width: 100%;
 	}
 
 	/* About Page */
@@ -685,8 +698,8 @@ Feel free to change the min/max-width values to whatever you need. Use variables
 		margin-top: 0;
 	}
 	.copyright p {
-	font-size: var(--font-mobile-sm);
-}
+		font-size: var(--font-mobile-sm);
+	}
 }
 
 /* Tablet Only */
@@ -699,9 +712,7 @@ Feel free to change the min/max-width values to whatever you need. Use variables
 	.hero-text h1 {
 		font-size: var(--font-mobile-lg);
 	}
-
 }
-
 
 /* Phone Only */
 @media (max-width: 480px) {
@@ -725,11 +736,9 @@ Feel free to change the min/max-width values to whatever you need. Use variables
 	.copyright {
 		display: flex;
 		gap: var(--spacing-sm);
-		
 	}
 	.copyright p {
 		font-size: 12px;
 		padding-bottom: 5px;
 	}
-
 }
