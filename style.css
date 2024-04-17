@@ -197,8 +197,6 @@ Global Component Styles (buttons, forms, etc.)
 	filter: grayscale(100%);
 }
 
-
-
 /* Forms */
 
 /* Utility Classes */
@@ -591,9 +589,8 @@ Feel free to change the min/max-width values to whatever you need. Use variables
 	#closeSvg {
 		position: absolute;
 		right: 25px;
-    	top: 40px;
+		top: 40px;
 	}
-
 
 	.top-links {
 		position: absolute;
@@ -637,14 +634,12 @@ Feel free to change the min/max-width values to whatever you need. Use variables
 	}
 	/* hamburger bar */
 	#closeSvg {
-    	top: 15px;
+		top: 15px;
 	}
 
 	.top-links {
 		top: 55px;
 	}
-
-
 
 	/* HERO SECTION */
 	.hero {
