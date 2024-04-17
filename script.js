@@ -50,12 +50,16 @@ function topFunction() {
 
 // TEAM MODALS
 
+// Overlay
+var overlay = document.getElementById("overlay");
+
 // close modal
 const closeModal = function () {
 	const modals = document.querySelectorAll(".modal");
 	modals.forEach(modal => {
 		modal.classList.add("hidden");
 	});
+	overlay.classList.add("hidden");
 	document.body.classList.remove("fixed");
 	topBtn.classList.remove("hidden");
 };
@@ -65,12 +69,15 @@ closeBtn.forEach(btn => {
 	btn.addEventListener("click", closeModal);
 });
 
+overlay.addEventListener("click", closeModal);
+
 // Open modal
 var teamMembers = document.querySelectorAll(".person");
 teamMembers.forEach(member => {
 	member.addEventListener("click", function () {
 		var modalId = member.getAttribute("data-modal");
 		var modal = document.getElementById(modalId);
+		overlay.classList.remove("hidden");
 		modal.classList.remove("hidden");
 		document.body.classList.add("fixed");
 		topBtn.classList.add("hidden");
