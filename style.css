@@ -137,6 +137,11 @@ a:hover {
 	text-decoration: underline;
 }
 
+.active {
+	background-color: #a6a3c27a;
+	border-radius: 10px;
+}
+
 /* Lists */
 
 /* Forms */
