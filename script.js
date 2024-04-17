@@ -129,3 +129,9 @@ charliImg.addEventListener("click", function() {
 	document.body.classList.add("fixed");
 	topBtn.classList.add("hidden");
 });
+
+document.addEventListener("keydown", function (e) {
+	if (e.key === "Escape" && (!liannaModal.classList.contains("hidden") || !mirandaModal.classList.contains("hidden") || !kylaModal.classList.contains("hidden") || !maxModal.classList.contains("hidden") || !trishModal.classList.contains("hidden") || !charliModal.classList.contains("hidden"))) {
+	  closeModal();
+	}
+  });
