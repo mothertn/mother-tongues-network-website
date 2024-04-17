@@ -44,34 +44,103 @@
   <title>Mother Tongues Network - About Us</title>
 </head>
 
-<body>
-  <header>
-    <div class="top-logo">
-      <img src="./assets/mtn-pink-logo.png" alt="" />
-      <span class="logo-text">Mother Tongues Network</span>
-    </div>
-    <ul class="top-links">
-      <li>
-        <a href="./index.html">Home</a>
-      </li>
-      <li>
-        <a href="./about.html">About</a>
-      </li>
-      <li>
-        <a href="./contact.html">Contact</a>
-      </li>
-    </ul>
-  </header>
-  <main>
-    <button onclick="topFunction()" id="topBtn">
-      <img src="./assets/icons/topBtn.svg" alt="Top Button" />
-    </button>
-    <section class="about-title wrapper">
-      <div>
-        <img src="https://placehold.co/600x400" alt="" />
-      </div>
-      <div class="text-content">
-        <h1>About Mother Tongues Network</h1>
+	<body>
+		<header>
+			<div>
+				<a href="./index.html" class="top-logo">
+					<img
+						src="./assets/mtn-pink-logo.png"
+						alt=">Mother Tongues Network logo"
+					/>
+					<span class="logo-text">Mother Tongues Network</span>
+				</a>
+			</div>
+
+			<button class="menuBtn" id="menuBtn">
+				<svg
+					id="openSvg"
+					width="46"
+					height="34"
+					viewBox="0 0 46 34"
+					fill="none"
+					xmlns="http://www.w3.org/2000/svg"
+				>
+					<line
+						x1="1.5"
+						y1="1.5"
+						x2="44.5"
+						y2="1.5"
+						stroke="white"
+						stroke-width="3"
+						stroke-linecap="round"
+					/>
+					<line
+						x1="1.5"
+						y1="32.5"
+						x2="44.5"
+						y2="32.5"
+						stroke="white"
+						stroke-width="3"
+						stroke-linecap="round"
+					/>
+					<line
+						x1="1.5"
+						y1="17"
+						x2="44.5"
+						y2="17"
+						stroke="white"
+						stroke-width="3"
+						stroke-linecap="round"
+					/>
+				</svg>
+				<svg
+					class="hidden"
+					id="closeSvg"
+					width="61"
+					height="56"
+					viewBox="0 0 61 56"
+					fill="none"
+					xmlns="http://www.w3.org/2000/svg"
+				>
+					<path
+						d="M2 2L58.8999 53.8008"
+						stroke="white"
+						stroke-width="3"
+						stroke-linecap="round"
+					/>
+					<path
+						d="M59 2L2 54"
+						stroke="white"
+						stroke-width="3"
+						stroke-linecap="round"
+					/>
+				</svg>
+			</button>
+
+			<nav class="nav-links-container" id="nav-links-container">
+				<ul class="top-links">
+					<li>
+						<a href="./index.html">Home</a>
+					</li>
+					<li>
+						<a href="./about.html">About</a>
+					</li>
+					<li>
+						<a href="./contact.html">Contact</a>
+					</li>
+				</ul>
+			</nav>
+		</header>
+		<main>
+			<button onclick="topFunction()" id="topBtn">
+				<img src="./assets/icons/topBtn.svg" alt="Top Button" />
+			</button>
+			<section class="about-title wrapper">
+				<div class="title-img">
+					<img src="https://placehold.co/600x400" alt="" />
+				</div>
+				<div class="text-content">
+					<h1>About Mother Tongues Network</h1>
 
         <p>
           Mother Tongues Network (MTN) was founded by a passionate team of
@@ -107,53 +176,68 @@
       </div>
     </section>
 
-    <div class="team-container">
-      <h2>Meet the Team</h2>
-      <p>Click photo to view bio</p>
-      <ul class="team-members">
-        <li class="person">
-          <img
-            src="./assets/MTN Team Photos/Lianna-personal-pic.jpeg"
-            alt="" />
-          <h3>Lianna Rice</h3>
-          <p>Co-Founder</p>
-          <p>Dir of Operations,</p>
-          <p>Strategy, and</p>
-          <p>Web Developer</p>
-        </li>
+			<div class="team-container">
+				<div class="team-title">
+					<h2>Meet the Team</h2>
+					<p>Click photo to view bio</p>
+				</div>
+				<ul class="team-members">
+					<li class="person">
+						<img
+							src="./assets/MTN Team Photos/Lianna-personal-pic.jpeg"
+							alt=""
+						/>
+						<div class="person-text">
+							<h3>Lianna Rice</h3>
+							<p>Co-Founder,</p>
+							<p>Dir of Operations,</p>
+							<p>Strategy, and</p>
+							<p>Web Developer</p>
+						</div>
+					</li>
 
-        <li class="person">
-          <img src="./assets/MTN Team Photos/Miranda.jpg" alt="" />
-          <h3>Miranda Saddleback</h3>
-          <p>Co-Founder</p>
-          <p>Dir of Community Engagement,</p>
-          <p>Cultural Affairs,</p>
-          <p>and Web Developer</p>
-        </li>
-        <li class="person">
-          <img src="./assets/MTN Team Photos/Kyla.png" alt="" />
-          <h3>Kyla Monture</h3>
-          <p>Co-Founder</p>
-          <p>Dir of Communications,</p>
-          <p>Social media, And Marketing</p>
-        </li>
-        <li class="person">
-          <img src="./assets/MTN Team Photos/Max-Harris-Pro.png" alt="" />
-          <h3>Max Harris</h3>
-          <p>Lead Web Developer</p>
-        </li>
-        <li class="person">
-          <img src="./assets/MTN Team Photos/trish-profile.jpg" alt="" />
-          <h3>Trish Augustine</h3>
-          <p>Web Developer</p>
-        </li>
-        <li class="person">
-          <img src="./assets/MTN Team Photos/Charli.jpg" alt="" />
-          <h3>Charli Ballantyne</h3>
-          <p>Web Developer</p>
-        </li>
-      </ul>
-    </div>
+					<li class="person picture-right">
+						<img src="./assets/MTN Team Photos/Miranda.jpg" alt="" />
+						<div class="person-text">
+							<h3>Miranda Saddleback</h3>
+							<p>Co-Founder,</p>
+							<p>Dir of Community Engagement,</p>
+							<p>Cultural Affairs,</p>
+							<p>and Web Developer</p>
+						</div>
+					</li>
+					<li class="person">
+						<img src="./assets/MTN Team Photos/Kyla.png" alt="" />
+						<div class="person-text">
+							<h3>Kyla Monture</h3>
+							<p>Co-Founder,</p>
+							<p>Dir of Communications,</p>
+							<p>Social media, and Marketing</p>
+						</div>
+					</li>
+					<li class="person picture-right">
+						<img src="./assets/MTN Team Photos/Max-Harris-Pro.png" alt="" />
+						<div class="person-text">
+							<h3>Max Harris</h3>
+							<p>Lead Web Developer</p>
+						</div>
+					</li>
+					<li class="person">
+						<img src="./assets/MTN Team Photos/trish-profile.jpg" alt="" />
+						<div class="person-text">
+							<h3>Trish Augustine</h3>
+							<p>Web Developer</p>
+						</div>
+					</li>
+					<li class="person picture-right">
+						<img src="./assets/MTN Team Photos/Charli.jpg" alt="" />
+						<div class="person-text">
+							<h3>Charli Ballantyne</h3>
+							<p>Web Developer</p>
+						</div>
+					</li>
+				</ul>
+			</div>
 
     <div class="mission">
       <h2>Join us in our Mission</h2>
