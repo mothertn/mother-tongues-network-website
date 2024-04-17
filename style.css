@@ -85,6 +85,7 @@ Global Styles (html, body, text, links, etc.)
 
 html {
 	font-size: var(--font-sm);
+	font-family: var(--body-font);
 }
 
 body {

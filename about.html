@@ -184,90 +184,206 @@
 				</div>
 			</section>
 
-			<div class="team-container">
-				<div class="team-title">
-					<h2>Meet the Team</h2>
-					<p>Click photo to view bio</p>
-				</div>
-				<ul class="team-members">
-					<li class="person">
-						<img
-							src="./assets/MTN Team Photos/Lianna-personal-pic.jpeg"
-							alt=""
-						/>
-						<div class="person-text">
-							<h3>Lianna Rice</h3>
-							<p>Co-Founder,</p>
-							<p>Dir of Operations,</p>
-							<p>Strategy, and</p>
-							<p>Web Developer</p>
-						</div>
-					</li>
+    <div class="team-container">
+      <div class="team-title">
+        <h2>Meet the Team</h2>
+        <p>Click photo to view bio</p>
+      </div>
+      <ul class="team-members">
+        <li class="person" data-modal="lianna-modal">
+          <img src="./assets/MTN Team Photos/Lianna-personal-pic.jpeg" alt="Lianna Rice" id="lianna-img">
+          <div class="person-text">
+            <h3>Lianna Rice</h3>
+            <p>Co-Founder,</p>
+            <p>Dir of Operations,</p>
+            <p>Strategy, and</p>
+            <p>Web Developer</p>
+          </div>
+        </li>
 
-					<li class="person picture-right">
-						<img src="./assets/MTN Team Photos/Miranda.jpg" alt="" />
-						<div class="person-text">
-							<h3>Miranda Saddleback</h3>
-							<p>Co-Founder,</p>
-							<p>Dir of Community Engagement,</p>
-							<p>Cultural Affairs,</p>
-							<p>and Web Developer</p>
-						</div>
-					</li>
-					<li class="person">
-						<img src="./assets/MTN Team Photos/Kyla.png" alt="" />
-						<div class="person-text">
-							<h3>Kyla Monture</h3>
-							<p>Co-Founder,</p>
-							<p>Dir of Communications,</p>
-							<p>Social media, and Marketing</p>
-						</div>
-					</li>
-					<li class="person picture-right">
-						<img src="./assets/MTN Team Photos/Max-Harris-Pro.png" alt="" />
-						<div class="person-text">
-							<h3>Max Harris</h3>
-							<p>Lead Web Developer</p>
-						</div>
-					</li>
-					<li class="person">
-						<img src="./assets/MTN Team Photos/trish-profile.jpg" alt="" />
-						<div class="person-text">
-							<h3>Trish Augustine</h3>
-							<p>Web Developer</p>
-						</div>
-					</li>
-					<li class="person picture-right">
-						<img src="./assets/MTN Team Photos/Charli.jpg" alt="" />
-						<div class="person-text">
-							<h3>Charli Ballantyne</h3>
-							<p>Web Developer</p>
-						</div>
-					</li>
-				</ul>
-			</div>
+        <li class="person picture-right" data-modal="miranda-modal">
+          <img src="./assets/MTN Team Photos/Miranda.jpg" alt="Miranda Saddleback" id="miranda-img">
+          <div class="person-text">
+            <h3>Miranda Saddleback</h3>
+            <p>Co-Founder,</p>
+            <p>Dir of Community Engagement,</p>
+            <p>Cultural Affairs,</p>
+            <p>and Web Developer</p>
+          </div>
+        </li>
+        <li class="person" data-modal="kyla-modal">
+          <img src="./assets/MTN Team Photos/Kyla.png" alt="Kyla Monture" id="kyla-img">
+          <div class="person-text">
+            <h3>Kyla Monture</h3>
+            <p>Co-Founder, </p>
+            <p>Dir of Communications,</p>
+            <p>Social media, and Marketing</p>
+          </div>
+        </li>
+        <li class="person picture-right" data-modal="max-modal">
+          <img src="./assets/MTN Team Photos/Max-Harris-Pro.png" alt="Max Harris" id="max-img">
+          <div class="person-text">
+            <h3>Max Harris</h3>
+            <p>Lead Web Developer</p>
+          </div>
+        </li>
+        <li class="person" data-modal="trish-modal">
+          <img src="./assets/MTN Team Photos/trish-profile.jpg" alt="Trish Augustine" id="trish-img">
+          <div class="person-text">
+            <h3>Trish Augustine</h3>
+            <p>Web Developer</p>
+          </div>
+        </li>
+        <li class="person picture-right" data-modal="charli-modal">
+          <img src="./assets/MTN Team Photos/Charli.jpg" alt="Charli Ballantyne" id="charli-img">
+          <div class="person-text">
+            <h3>Charli Ballantyne</h3>
+            <p>Web Developer</p>
+          </div>
+        </li>
+      </ul>
+      </ul>
+    </div>
 
-			<div class="mission">
-				<h2>Join us in our Mission</h2>
-				<p>
-					To revitalize Indigenous languages and cultures, one word at a time.
-				</p>
-				<button>Contact Us</button>
-			</div>
+    <div class="mission">
+      <h2>Join us in our Mission</h2>
+      <p>
+        To revitalize Indigenous languages and cultures, one word at a time.
+      </p>
+      <button>
+        <a href="./contact.html">Contact Us</a> 
+      </button>
+    </div>
 
-			<div class="stay-updated">
-				<h2>Stay updated in our progress</h2>
-				<p>
-					Join our email list to receive the latest news and announcements about
-					the development of our Indigenous Language Learning App. Sign up today
-					and be the first to know when the app is ready for launch!
-				</p>
-				<form action="">
-					<input type="text" name="" id="" placeholder="Email" size="25" />
-					<input type="submit" value="Submit" />
-				</form>
-			</div>
-		</main>
+    <div class="stay-updated">
+      <h2>Stay updated on our progress</h2>
+      <p>
+        Join our email list to receive the latest news and announcements about
+        the development of our Indigenous Language Learning App. Sign up today
+        and be the first to know when the app is ready for launch!
+      </p>
+      <form action="">
+        <input type="text" name="" id="" placeholder="Email" size="25" />
+        <input type="submit" value="Submit" />
+      </form>
+    </div>
+  </main>
+
+  <!-- Team Modals -->
+  <div id="overlay" class="overlay hidden"></div>
+
+  <!-- Lianna modal -->
+  <div class="modal hidden" id="lianna-modal">
+    <div class="close-btn">
+      <svg width="25" height="25" viewBox="0 0 67 62" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M5 5L61.8999 56.8008" stroke="white" stroke-width="10" stroke-linecap="round" />
+        <path d="M62 5L5 57" stroke="white" stroke-width="10" stroke-linecap="round" />
+      </svg>
+    </div>
+    <div class="modal-img-box">
+      <img src="./assets/MTN Team Photos/Lianna-personal-pic.jpeg" alt="Lianna Rice" class="modal-img">
+
+    </div>
+    <h2>Lianna Rice</h2>
+    <h3>Co-Founder
+      Director of Operations, Strategy, And
+      Web Development</h3>
+    <div class="modal-scroll">
+      <p>“Atelihai ilonnasi! Hi everyone! Liannavunga- I'm Lianna, a Nunatsiavut Inuk from Labrador. My tech journey flourished with a web development internship, where I gained the skills to create intuitive and visually appealing web experiences. Co-founding MTN and being influenced by the intergenerational impact of the residential school system, which severed my connection to my Inuttitut language, I'm deeply committed to enhancing the accessibility of Indigenous languages. With a background in sciences, community work, and project management, along with deep values rooted in Indigenous rights, inclusion, equity, and accessibility, my work with MTN allows me to contribute meaningfully to future generations.”</p>
+    </div>
+  </div>
+
+  <!-- Miranda modal -->
+  <div class="modal hidden" id="miranda-modal">
+    <div class="close-btn">
+      <svg width="25" height="25" viewBox="0 0 67 62" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M5 5L61.8999 56.8008" stroke="white" stroke-width="10" stroke-linecap="round" />
+        <path d="M62 5L5 57" stroke="white" stroke-width="10" stroke-linecap="round" />
+      </svg>
+    </div>
+    <div class="modal-img-box">
+      <img src="./assets/MTN Team Photos/Miranda.jpg" alt="Miranda Saddleback" class="modal-img">
+    </div>
+    <h2>Miranda Saddleback</h2>
+    <h3>Co-Founder
+      Director of Community Engagement, Cultural Affairs, And Web Development</h3>
+    <div class="modal-scroll">
+      <p>"Wâcîyê/Hello there! I'm Miranda Saddleback Nânâtêwikamik, from Maskwacis Samson four bands, rooted in Edmonton, all within the Treaty 6 Territory. Embracing my Indigenous Nêhiyawêwin Plains Cree heritage, I share its rich traditions as a cultural presenter & knowledge keeper. With a diverse background, including working in social work, & passion for advocacy, I collaborate at MTN, amplifying Indigenous voices through various initiatives (web dev’, community engagement, digital artistry, UX/UI design, & cultural revitalization). As custodian of the sacred History of Creation story, intertwined with Nêhiyawêwin knowledge, I am committed in preserving our cultural legacy for generations to come!"</p>
+    </div>
+  </div>
+
+  <!-- Kyla modal -->
+  <div class="modal hidden" id="kyla-modal">
+    <div class="close-btn">
+      <svg width="25" height="25" viewBox="0 0 67 62" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M5 5L61.8999 56.8008" stroke="white" stroke-width="10" stroke-linecap="round" />
+        <path d="M62 5L5 57" stroke="white" stroke-width="10" stroke-linecap="round" />
+      </svg>
+    </div>
+    <div class="modal-img-box">
+      <img src="./assets/MTN Team Photos/Kyla.png" alt="Kyla Monture" class="modal-img">
+    </div>
+    <h2>Kyla Monture</h2>
+    <h3>Co-Founder
+      Director of Communications, Social media, And Marketing</h3>
+    <div class="modal-scroll">
+      <p>"Hi there! I'm Kyla Monture, a Mohawk youth from 6 Nations of the Grand River. With web development skills gained from an internship at the Indigenous Friends Association, I'm thrilled to be part of MTN, a project I co-founded to reconnect with my Mohawk language and assist other young Indigenous people in connecting with their languages. Currently interning in social media and marketing, I'm eager to contribute. I believe MTN's program is crucial for preserving Indigenous languages and preventing language loss across generations. Our app serves as a powerful tool in this mission, preserving traditions and languages for future generations."</p>
+    </div>
+  </div>
+
+  <!-- Max modal -->
+  <div class="modal hidden" id="max-modal">
+    <div class="close-btn">
+      <svg width="25" height="25" viewBox="0 0 67 62" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M5 5L61.8999 56.8008" stroke="white" stroke-width="10" stroke-linecap="round" />
+        <path d="M62 5L5 57" stroke="white" stroke-width="10" stroke-linecap="round" />
+      </svg>
+    </div>
+    <div class="modal-img-box">
+      <img src="./assets/MTN Team Photos/Max-Harris-Pro.png" alt="Max Harris" class="modal-img">
+    </div>
+    <h2>Max Harris</h2>
+    <h3>Lead Web Developer</h3>
+    <div class="modal-scroll">
+      <p>“I am a full-stack web developer with over a decade of experience in the startup space. As a husband to an Indigenous woman and a father to Indigenous children, I am dedicated to applying my skillset and leadership to building technical solutions for Indigenous communities through Mother Tongues Network.”</p>
+    </div>
+  </div>
+
+  <!-- Trish modal -->
+  <div class="modal hidden" id="trish-modal">
+    <div class="close-btn">
+      <svg width="25" height="25" viewBox="0 0 67 62" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M5 5L61.8999 56.8008" stroke="white" stroke-width="10" stroke-linecap="round" />
+        <path d="M62 5L5 57" stroke="white" stroke-width="10" stroke-linecap="round" />
+      </svg>
+    </div>
+    <div class="modal-img-box">
+      <img src="./assets/MTN Team Photos/trish-profile.jpg" alt="Trish Augustine" class="modal-img">
+    </div>
+    <h2>Trish Augustine</h2>
+    <h3>Web Developer</h3>
+    <div class="modal-scroll">
+      <p>“As a junior developer, I've accumulated valuable experience in front-end development. I am based in my home community of Elsipogtog First Nation and am proud to be part of the growing number of Indigenous people in technology. Although my current focus lies in technology, particularly animation and web development, my professional journey began over a decade ago in healthcare. I worked as a nurse, perinatal educator, and doula, accumulating diverse experiences along the way that will contribute to my work at MTN.”</p>
+    </div>
+  </div>
+
+  <!-- Charli modal -->
+  <div class="modal hidden" id="charli-modal">
+    <div class="close-btn">
+      <svg width="25" height="25" viewBox="0 0 67 62" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M5 5L61.8999 56.8008" stroke="white" stroke-width="10" stroke-linecap="round" />
+        <path d="M62 5L5 57" stroke="white" stroke-width="10" stroke-linecap="round" />
+      </svg>
+    </div>
+    <div class="modal-img-box">
+      <img src="./assets/MTN Team Photos/Charli.jpg" alt="" class="modal-img">
+    </div>
+    <h2>Charli Ballantyne</h2>
+    <h3>Web Developer</h3>
+    <div class="modal-scroll">
+      <p>“I am Ojibwe and Cree from Roseau River First Nation, Manitoba. I started my tech journey in 2023 as a front-end web developer with experience in digital business and marketing. Prior to venturing into technology, I garnered experience in childcare, a background I'm thrilled to leverage at Mother Tongues Network.”</p>
+    </div>
+  </div>
 
 		<footer>
 			<div class="footer-content wrapper">
