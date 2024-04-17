@@ -262,7 +262,7 @@ span.logo-text,
 }
 
 .top-links li a {
-	font-size: var(--font-md);
+	font-size: var(--font-mobile-lg);
 }
 
 .menuBtn {
@@ -555,7 +555,7 @@ Feel free to change the min/max-width values to whatever you need. Use variables
 	#closeSvg {
 		position: absolute;
 		right: 25px;
-    top: 40px;
+    	top: 40px;
 	}
 
 
@@ -571,7 +571,7 @@ Feel free to change the min/max-width values to whatever you need. Use variables
 	}
 
 	.top-links li {
-		width: 120px;
+		width: 175px;
 		margin: 20px;
 		text-align: center;
 	}
@@ -601,8 +601,7 @@ Feel free to change the min/max-width values to whatever you need. Use variables
 	}
 	/* hamburger bar */
 	#closeSvg {
-			
-    top: 15px;
+    	top: 15px;
 	}
 
 	.top-links {
