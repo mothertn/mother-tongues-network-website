@@ -423,7 +423,6 @@ button {
 /* FOOTER */
 footer {
 	width: 100%;
-
 	margin: 0 auto;
 	display: flex;
 	background-color: var(--color-slate-grey);
@@ -440,6 +439,8 @@ footer a:hover {
 	justify-content: space-between;
 	align-items: center;
 	color: var(--color-black);
+	gap: 10px;
+	margin-top: 10px;
 }
 
 .footer-content a {
@@ -458,16 +459,38 @@ footer a:hover {
 .footer-logo img {
 	width: 70px;
 }
+.footer-title {
+	display: flex;
+	flex-direction: column;
+	}
+
+.footer-title p,
+.footer-title span {
+	margin-top: 0;
+	margin-bottom: 0;
+}
+
+.footer-title span {
+	font-family: var(--main-heading-font);
+	font-size: var(--font-smmd);
+	font-weight: 700;
+}
 
 .copyright {
 	padding-bottom: 25px;
+	margin-top: 20px;
 }
 
-.copyright p,
-.copyright span {
+
+.copyright p {
+	display: flex;
+	flex-direction: column;
 	font-family: var(--sub-heading-font);
 	font-size: var(--font-smmd);
 	margin-bottom: 0;
+	margin-top: 0;
+	line-height: 1;
+	
 }
 
 /* 
@@ -548,31 +571,25 @@ Feel free to change the min/max-width values to whatever you need. Use variables
 	}
 }
 
-/* Tablet & Smaller */
-@media (max-width: 768px) {
-	.wrapper {
-		width: 90%;
-	}
-
-	header {
-		position: relative;
-	}
-
+@media (max-width: 1000px) {
+	/* hamburger bar */
 	.top-links {
 		position: absolute;
 		top: 80px;
 		right: 15px;
 		padding: 40px 30px;
-		background: navy;
+		background: rgb(1, 1, 80);
 		border-radius: 20px;
 		flex-direction: column;
 		z-index: 3;
 	}
 
 	.top-links li {
+		width: 120px;
 		margin: 20px;
-		border-bottom: 2px solid #e041df;
-		border-radius: 2px;
+		border: 1px solid;
+		border-radius: 10px;
+		text-align: center;
 	}
 	.nav-links-container {
 		display: none;
@@ -585,6 +602,18 @@ Feel free to change the min/max-width values to whatever you need. Use variables
 	.menuBtn {
 		display: block;
 		background-color: transparent;
+	}
+	/* end of hamburger bar */
+}
+
+/* Tablet & Smaller */
+@media (max-width: 768px) {
+	.wrapper {
+		width: 90%;
+	}
+
+	header {
+		position: relative;
 	}
 
 	/* HERO SECTION */
@@ -623,6 +652,24 @@ Feel free to change the min/max-width values to whatever you need. Use variables
 	.stay-updated {
 		width: 90%;
 	}
+
+	/* footer for tablet and phone */
+
+	.footer-title p {
+		font-size: var(--font-smmd);
+		line-height: 1;
+	}
+	.footer-title span {
+		font-size: var(--font-mobile-sm);
+	}
+
+	.copyright {
+		padding-bottom: 0;
+		margin-top: 0;
+	}
+	.copyright p {
+	font-size: var(--font-mobile-sm);
+}
 }
 
 /* Tablet Only */
@@ -635,7 +682,9 @@ Feel free to change the min/max-width values to whatever you need. Use variables
 	.hero-text h1 {
 		font-size: var(--font-mobile-lg);
 	}
+
 }
+
 
 /* Phone Only */
 @media (max-width: 480px) {
@@ -650,4 +699,20 @@ Feel free to change the min/max-width values to whatever you need. Use variables
 	p {
 		font-size: var(--font-smmd);
 	}
+
+	/* footer */
+	.footer-content {
+		display: flex;
+		flex-direction: column;
+	}
+	.copyright {
+		display: flex;
+		gap: var(--spacing-sm);
+		
+	}
+	.copyright p {
+		font-size: 12px;
+		padding-bottom: 5px;
+	}
+
 }
