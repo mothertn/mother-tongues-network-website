@@ -35,6 +35,10 @@ section .text-content {
 	width: 50%;
 }
 
+.title-img {
+	width: 50%;
+}
+
 /* commitment to authenticity */
 .commitment {
 	border-radius: 30px;
@@ -42,6 +46,14 @@ section .text-content {
 
 .commitment .text-content {
 	padding: 30px;
+}
+
+.commitment-img {
+	border-radius: 30px;
+}
+
+.commitment-img img {
+	border-radius: 30px;
 }
 
 /* TEAM MEMBERS */
@@ -131,6 +143,14 @@ section .text-content {
 	}
 	.commitment .text-content {
 		width: 100%;
+	}
+
+	.commitment {
+		gap: 90px;
+	}
+
+	.commitment h2 {
+		text-align: center;
 	}
 }
 
