@@ -19,9 +19,23 @@ section {
 	display: flex;
 	align-items: center;
 	gap: 20px;
+	justify-content: center;
+}
+
+.about-title {
+	width: 100%;
+	max-width: 1471px;
+}
+
+.about-title .text-content {
+	padding: 40px;
 }
 
 section .text-content {
+	width: 50%;
+}
+
+.title-img {
 	width: 50%;
 }
 
@@ -32,6 +46,14 @@ section .text-content {
 
 .commitment .text-content {
 	padding: 30px;
+}
+
+.commitment-img {
+	border-radius: 30px;
+}
+
+.commitment-img img {
+	border-radius: 30px;
 }
 
 /* TEAM MEMBERS */
@@ -121,6 +143,14 @@ section .text-content {
 	}
 	.commitment .text-content {
 		width: 100%;
+	}
+
+	.commitment {
+		gap: 90px;
+	}
+
+	.commitment h2 {
+		text-align: center;
 	}
 }
 
