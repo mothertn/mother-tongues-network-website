@@ -329,7 +329,7 @@ span.logo-text,
 	display: flex;
 	align-items: center;
 	gap: 20px;
-	border-radius: 30px;
+	border-radius: var(--radius-lg);
 }
 
 .home-text {
