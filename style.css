@@ -71,6 +71,7 @@ Variables (colors, text, spacing, etc.)
 	/* Border Radius */
 	--radius-sm: 10px;
 	--radius-md: 20px;
+	--radius-lg: 30px;
 
 	/* Wrappers */
 	--wrapper-max: 1400px;
