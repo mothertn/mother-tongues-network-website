@@ -641,26 +641,6 @@ Feel free to change the min/max-width values to whatever you need. Use variables
 		background-color: transparent;
 	}
 	/* end of hamburger bar */
-}
-
-/* Tablet & Smaller */
-@media (max-width: 768px) {
-	.wrapper {
-		width: 90%;
-	}
-
-	header {
-		position: relative;
-	}
-	/* hamburger bar */
-	#closeSvg {
-		top: 15px;
-	}
-
-	.top-links {
-		top: 55px;
-	}
-
 	/* HERO SECTION */
 	.hero {
 		margin: 100px auto;
@@ -692,6 +672,25 @@ Feel free to change the min/max-width values to whatever you need. Use variables
 		position: absolute;
 		opacity: 0.3;
 	}
+}
+
+/* Tablet & Smaller */
+@media (max-width: 768px) {
+	.wrapper {
+		width: 90%;
+	}
+
+	header {
+		position: relative;
+	}
+	/* hamburger bar */
+	#closeSvg {
+		top: 15px;
+	}
+
+	.top-links {
+		top: 55px;
+	}
 
 	/* Stay Updated */
 	.stay-updated {
@@ -720,7 +719,7 @@ Feel free to change the min/max-width values to whatever you need. Use variables
 /* Tablet Only */
 @media (min-width: 768px) and (max-width: 1024px) {
 	.hero-text {
-		padding: 70px 90px;
+		/* padding: 70px 90px; */
 		width: 500px;
 	}
 
