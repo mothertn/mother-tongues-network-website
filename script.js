@@ -69,7 +69,9 @@ closeBtn.forEach(btn => {
 	btn.addEventListener("click", closeModal);
 });
 
-overlay.addEventListener("click", closeModal);
+if (overlay) {
+	overlay.addEventListener("click", closeModal);
+}
 
 // Open modal
 var teamMembers = document.querySelectorAll(".person");
