@@ -58,7 +58,6 @@ section .text-content {
 
 /* TEAM MEMBERS */
 .team-container {
-	/* width: 95%; */
 	max-width: 1600px;
 	margin: 0 auto;
 	padding: 150px 0px;
@@ -108,6 +107,7 @@ section .text-content {
 }
 
 .person p {
+	max-width: 350px;
 	margin: 2px;
 }
 
@@ -186,10 +186,12 @@ section .text-content {
 
 .modal h2 {
 	font-size: var(--font-mobile-lg);
+	text-align: center;
 	margin-top: 10px;
 }
 
 .modal h3 {
+	font-weight: 500;
 	text-align: center;
 	padding: 10px 15px;
 	margin: 10px;
@@ -262,6 +264,11 @@ section .text-content {
 @media (min-width: 768px) and (max-width: 1024px) {
 	.team-members {
 		gap: 100px;
+		width: 85%;
+	}
+
+	.mobile-text {
+		display: block;
 	}
 	.person {
 		flex-basis: 100%;
@@ -270,6 +277,7 @@ section .text-content {
 		justify-content: center;
 		gap: 80px;
 	}
+
 
 	.picture-right {
 		flex-direction: row-reverse;
@@ -287,6 +295,8 @@ section .text-content {
 		padding: 50px 0;
 	}
 
+
+
 	.team-title {
 		width: 90%;
 		margin: 0 auto;
@@ -303,6 +313,10 @@ section .text-content {
 	.team-title h2,
 	.team-title p {
 		margin: 10px 0;
+	}
+
+	.team-title p::after {
+		content: " and team titles.";
 	}
 
 	.team-members {
