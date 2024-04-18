@@ -25,10 +25,11 @@ section {
 .about-title {
 	width: 100%;
 	max-width: 1471px;
+	gap: 100px;
 }
 
 .about-title .text-content {
-	padding: 40px;
+	width: 70%;
 }
 
 section .text-content {

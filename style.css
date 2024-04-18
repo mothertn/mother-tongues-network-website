@@ -54,6 +54,7 @@ Variables (colors, text, spacing, etc.)
 	--font-smmd: 1.25rem;
 	--font-md: 1.5rem;
 	--font-lg: 3rem;
+	--font-xl: 3.5rem;
 	--font-xxl: 4rem;
 	/* Font Family */
 	--main-heading-font: "Cinzel", Georgia, serif;
@@ -111,7 +112,7 @@ img {
 
 h1 {
 	font-family: var(--main-heading-font);
-	font-size: var(--font-xxl);
+	font-size: var(--font-xl);
 	margin-bottom: 0;
 }
 
