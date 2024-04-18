@@ -514,6 +514,13 @@ Feel free to change the min/max-width values to whatever you need. Use variables
 ===================================
 */
 
+@media (min-width: 1410px) {
+	.hero {
+		margin: 110px auto;
+		margin-bottom: 130px;
+	}
+}
+
 /* Home Page Hero */
 @media (max-width: 1300px) {
 	.hero-text h1 {
@@ -555,6 +562,10 @@ Feel free to change the min/max-width values to whatever you need. Use variables
 
 	.homepage-content img {
 		width: 100%;
+	}
+
+	.home-text h2 {
+		text-align: center;
 	}
 
 	.home-text,
@@ -633,26 +644,6 @@ Feel free to change the min/max-width values to whatever you need. Use variables
 	font-size: var(--font-mobile-lg);
 }
 	/* end of hamburger bar */
-}
-
-/* Tablet & Smaller */
-@media (max-width: 768px) {
-	.wrapper {
-		width: 90%;
-	}
-
-	header {
-		position: relative;
-	}
-	/* hamburger bar */
-	#closeSvg {
-		top: 15px;
-	}
-
-	.top-links {
-		top: 55px;
-	}
-
 	/* HERO SECTION */
 	.hero {
 		margin: 100px auto;
@@ -684,6 +675,25 @@ Feel free to change the min/max-width values to whatever you need. Use variables
 		position: absolute;
 		opacity: 0.3;
 	}
+}
+
+/* Tablet & Smaller */
+@media (max-width: 768px) {
+	.wrapper {
+		width: 90%;
+	}
+
+	header {
+		position: relative;
+	}
+	/* hamburger bar */
+	#closeSvg {
+		top: 15px;
+	}
+
+	.top-links {
+		top: 55px;
+	}
 
 	/* Stay Updated */
 	.stay-updated {
@@ -712,7 +722,7 @@ Feel free to change the min/max-width values to whatever you need. Use variables
 /* Tablet Only */
 @media (min-width: 768px) and (max-width: 1024px) {
 	.hero-text {
-		padding: 70px 90px;
+		/* padding: 70px 90px; */
 		width: 500px;
 	}
 
