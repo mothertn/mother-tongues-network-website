@@ -267,11 +267,7 @@ span.logo-text,
 	list-style-type: none;
 	padding: var(--spacing-sm);
 	font-family: var(--body-font);
-	font-size: var(--font-md);
-}
-
-.top-links li a {
-	font-size: var(--font-mobile-lg);
+	font-size: var(--font-smmd);
 }
 
 .menuBtn {
@@ -631,6 +627,11 @@ Feel free to change the min/max-width values to whatever you need. Use variables
 		display: block;
 		background-color: transparent;
 	}
+
+	/* links size for mobile menu */
+.top-links li a {
+	font-size: var(--font-mobile-lg);
+}
 	/* end of hamburger bar */
 }
 
@@ -733,6 +734,7 @@ Feel free to change the min/max-width values to whatever you need. Use variables
 	p {
 		font-size: var(--font-smmd);
 	}
+
 
 	/* footer */
 	.footer-content {
