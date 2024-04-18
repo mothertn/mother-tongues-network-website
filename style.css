@@ -53,7 +53,9 @@ Variables (colors, text, spacing, etc.)
 	--font-sm: 1rem;
 	--font-smmd: 1.25rem;
 	--font-md: 1.5rem;
+	--font-mdlg: 1.75rem;
 	--font-lg: 3rem;
+	--font-xl: 3.5rem;
 	--font-xxl: 4rem;
 	/* Font Family */
 	--main-heading-font: "Cinzel", Georgia, serif;
@@ -64,12 +66,15 @@ Variables (colors, text, spacing, etc.)
 
 	/* Spacing */
 	--spacing-sm: 10px;
+	--spacing-mm: 15px;
 	--spacing-md: 20px;
 	--spacing-lg: 30px;
+	--spacing-xl: 50px;
 
 	/* Border Radius */
 	--radius-sm: 10px;
 	--radius-md: 20px;
+	--radius-lg: 30px;
 
 	/* Wrappers */
 	--wrapper-max: 1400px;
