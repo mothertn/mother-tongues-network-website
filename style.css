@@ -142,7 +142,7 @@ a:hover {
 
 .active {
 	background-color: #a6a3c27a;
-	border-radius: 10px;
+	border-radius: var(--radius-sm);
 }
 
 /* Lists */
