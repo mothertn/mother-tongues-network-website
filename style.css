@@ -53,6 +53,7 @@ Variables (colors, text, spacing, etc.)
 	--font-sm: 1rem;
 	--font-smmd: 1.25rem;
 	--font-md: 1.5rem;
+	--font-mdlg: 1.75rem;
 	--font-lg: 3rem;
 	--font-xl: 3.5rem;
 	--font-xxl: 4rem;
@@ -68,6 +69,7 @@ Variables (colors, text, spacing, etc.)
 	--spacing-mm: 15px;
 	--spacing-md: 20px;
 	--spacing-lg: 30px;
+	--spacing-xl: 50px;
 
 	/* Border Radius */
 	--radius-sm: 10px;
