@@ -684,8 +684,7 @@ Feel free to change the min/max-width values to whatever you need. Use variables
 		width: 90%;
 	}
 
-	span.logo-text,
-	.footer-logo p {
+	span.logo-text {
 		font-size: var(--font-mobile-md);
 	}
 
