@@ -39,6 +39,10 @@ section .text-content {
 	width: 50%;
 }
 
+.mobile-zoom {
+	display: none;
+}
+
 /* commitment to authenticity */
 .commitment {
 	border-radius: 30px;
@@ -240,6 +244,14 @@ section .text-content {
 
 	.text-content h1 {
 		text-align: center;
+	}
+
+	.desktop-zoom {
+		display: none;
+	}
+
+	.mobile-zoom {
+		display: block;
 	}
 
 	.commitment-img {
