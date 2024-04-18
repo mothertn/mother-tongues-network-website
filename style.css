@@ -340,13 +340,13 @@ span.logo-text,
 
 .border-radius img {
 	width: 100%;
-	border-radius: 30px;
+	border-radius: var(--radius-lg);
 }
 
 .border-radius {
 	width: 50%;
 	object-fit: contain;
-	border-radius: 30px;
+	border-radius: var(--radius-lg);
 }
 
 /* STAY UPDATED */
@@ -356,7 +356,7 @@ span.logo-text,
 	margin: 200px auto;
 	text-align: center;
 	background: rgba(0, 0, 0, 0.368);
-	border-radius: 30px;
+	border-radius: var(--radius-lg);
 	padding: 50px 80px;
 }
 
