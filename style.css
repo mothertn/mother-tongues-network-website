@@ -686,6 +686,7 @@ Feel free to change the min/max-width values to whatever you need. Use variables
 
 	span.logo-text {
 		font-size: var(--font-mobile-md);
+		margin-right: var(--spacing-sm);
 	}
 
 	/* hamburger bar */
