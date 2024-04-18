@@ -25,10 +25,11 @@ section {
 .about-title {
 	width: 100%;
 	max-width: 1471px;
+	gap: 100px;
 }
 
 .about-title .text-content {
-	padding: 40px;
+	width: 70%;
 }
 
 section .text-content {
@@ -37,6 +38,10 @@ section .text-content {
 
 .title-img {
 	width: 50%;
+}
+
+.mobile-zoom {
+	display: none;
 }
 
 /* commitment to authenticity */
@@ -240,6 +245,14 @@ section .text-content {
 
 	.text-content h1 {
 		text-align: center;
+	}
+
+	.desktop-zoom {
+		display: none;
+	}
+
+	.mobile-zoom {
+		display: block;
 	}
 
 	.commitment-img {
