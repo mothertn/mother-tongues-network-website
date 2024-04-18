@@ -113,6 +113,7 @@ section .text-content {
 }
 
 .person p {
+	max-width: 350px;
 	margin: 2px;
 }
 
@@ -191,10 +192,12 @@ section .text-content {
 
 .modal h2 {
 	font-size: var(--font-mobile-lg);
+	text-align: center;
 	margin-top: var(--spacing-sm);
 }
 
 .modal h3 {
+	font-weight: 500;
 	text-align: center;
 	padding: var(--spacing-sm) var(--spacing-mm);
 	margin: var(--spacing-sm);
@@ -275,6 +278,7 @@ section .text-content {
 @media (min-width: 768px) and (max-width: 1024px) {
 	.team-members {
 		gap: 100px;
+		width: 85%;
 	}
 	.person {
 		flex-basis: 100%;
@@ -317,6 +321,11 @@ section .text-content {
 	.team-title p {
 		margin: var(--spacing-sm) 0;
 	}
+
+	.team-title p::after {
+		content: " and team titles.";
+	}
+
 
 	.team-members {
 		margin: 20px auto;
