@@ -516,6 +516,13 @@ Feel free to change the min/max-width values to whatever you need. Use variables
 ===================================
 */
 
+@media (min-width: 1410px) {
+	.hero {
+		margin: 110px auto;
+		margin-bottom: 130px;
+	}
+}
+
 /* Home Page Hero */
 @media (max-width: 1300px) {
 	.hero-text h1 {
@@ -557,6 +564,10 @@ Feel free to change the min/max-width values to whatever you need. Use variables
 
 	.homepage-content img {
 		width: 100%;
+	}
+
+	.home-text h2 {
+		text-align: center;
 	}
 
 	.home-text,
