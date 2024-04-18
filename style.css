@@ -232,6 +232,7 @@ header {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
+	position: relative;
 }
 
 .top-logo {
@@ -604,16 +605,15 @@ Feel free to change the min/max-width values to whatever you need. Use variables
 
 @media (max-width: 1000px) {
 	/* hamburger bar */
-	#closeSvg {
+
+	.nav-links-container {
 		position: absolute;
-		right: 25px;
-		top: 40px;
+		top: 60px;
+		right: 15px;
+		z-index: 100;
 	}
 
 	.top-links {
-		position: absolute;
-		top: 80px;
-		right: 15px;
 		padding: 40px 30px;
 		background: rgb(1, 1, 80);
 		border-radius: var(--radius-md);
@@ -636,13 +636,14 @@ Feel free to change the min/max-width values to whatever you need. Use variables
 
 	.menuBtn {
 		display: block;
+		padding: var(--spacing-sm) 0;
 		background-color: transparent;
 	}
 
 	/* links size for mobile menu */
-.top-links li a {
-	font-size: var(--font-mobile-lg);
-}
+	.top-links li a {
+		font-size: var(--font-mobile-lg);
+	}
 	/* end of hamburger bar */
 	/* HERO SECTION */
 	.hero {
@@ -683,13 +684,12 @@ Feel free to change the min/max-width values to whatever you need. Use variables
 		width: 90%;
 	}
 
-	header {
-		position: relative;
+	span.logo-text,
+	.footer-logo p {
+		font-size: var(--font-mobile-md);
 	}
+
 	/* hamburger bar */
-	#closeSvg {
-		top: 15px;
-	}
 
 	.top-links {
 		top: 55px;
@@ -744,7 +744,6 @@ Feel free to change the min/max-width values to whatever you need. Use variables
 	p {
 		font-size: var(--font-smmd);
 	}
-
 
 	/* footer */
 	.footer-content {
