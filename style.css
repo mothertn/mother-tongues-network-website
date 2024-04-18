@@ -524,7 +524,7 @@ Feel free to change the min/max-width values to whatever you need. Use variables
 
 	/* Stay Updated */
 	.stay-updated {
-		padding: 30px;
+		padding: var(--spacing-lg);
 		width: 80%;
 	}
 
@@ -562,7 +562,7 @@ Feel free to change the min/max-width values to whatever you need. Use variables
 	.home-text,
 	.commitment .text-content {
 		background: rgba(0, 0, 0, 0.368);
-		border-radius: 30px;
+		border-radius: var(--radius-lg);
 		padding: 30px;
 	}
 
@@ -607,14 +607,14 @@ Feel free to change the min/max-width values to whatever you need. Use variables
 		right: 15px;
 		padding: 40px 30px;
 		background: rgb(1, 1, 80);
-		border-radius: 20px;
+		border-radius: var(--radius-md);
 		flex-direction: column;
 		z-index: 3;
 	}
 
 	.top-links li {
 		width: 175px;
-		margin: 20px;
+		margin: var(--spacing-md);
 		text-align: center;
 	}
 	.nav-links-container {
