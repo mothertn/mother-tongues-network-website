@@ -350,7 +350,8 @@ span.logo-text,
 }
 
 /* STAY UPDATED */
-.stay-updated {
+.stay-updated,
+.mission {
 	width: 65%;
 	max-width: 1120px;
 	margin: 200px auto;
@@ -358,6 +359,10 @@ span.logo-text,
 	background: rgba(0, 0, 0, 0.368);
 	border-radius: var(--radius-lg);
 	padding: 50px 80px;
+}
+
+.stay-updated {
+	display: none; /* Hiding the form for now */
 }
 
 .stay-updated h2 {
@@ -391,7 +396,7 @@ button {
 .contact-section {
 	width: 95%;
 	max-width: 1600px;
-	margin: 0 auto;
+	margin: 80px auto 160px;
 	padding: 163px 0px;
 	background-image: url(./assets/team-blob.svg);
 	background-position: center;
@@ -539,6 +544,7 @@ Feel free to change the min/max-width values to whatever you need. Use variables
 		flex-direction: column;
 		align-items: center;
 	}
+
 	.stay-updated form [type="submit"] {
 		margin: 15px 0;
 		width: fit-content;
@@ -743,6 +749,10 @@ Feel free to change the min/max-width values to whatever you need. Use variables
 
 	p {
 		font-size: var(--font-smmd);
+	}
+
+	.contact-section {
+		margin: 80px auto;
 	}
 
 	/* footer */
