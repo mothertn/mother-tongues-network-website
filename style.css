@@ -53,7 +53,9 @@ Variables (colors, text, spacing, etc.)
 	--font-sm: 1rem;
 	--font-smmd: 1.25rem;
 	--font-md: 1.5rem;
+	--font-mdlg: 1.75rem;
 	--font-lg: 3rem;
+	--font-xl: 3.5rem;
 	--font-xxl: 4rem;
 	/* Font Family */
 	--main-heading-font: "Cinzel", Georgia, serif;
@@ -64,12 +66,15 @@ Variables (colors, text, spacing, etc.)
 
 	/* Spacing */
 	--spacing-sm: 10px;
+	--spacing-mm: 15px;
 	--spacing-md: 20px;
 	--spacing-lg: 30px;
+	--spacing-xl: 50px;
 
 	/* Border Radius */
 	--radius-sm: 10px;
 	--radius-md: 20px;
+	--radius-lg: 30px;
 
 	/* Wrappers */
 	--wrapper-max: 1400px;
@@ -85,6 +90,7 @@ Global Styles (html, body, text, links, etc.)
 
 html {
 	font-size: var(--font-sm);
+	font-family: var(--body-font);
 }
 
 body {
@@ -110,7 +116,7 @@ img {
 
 h1 {
 	font-family: var(--main-heading-font);
-	font-size: var(--font-xxl);
+	font-size: var(--font-xl);
 	margin-bottom: 0;
 }
 
@@ -135,6 +141,11 @@ a {
 
 a:hover {
 	text-decoration: underline;
+}
+
+.active {
+	background-color: #a6a3c27a;
+	border-radius: var(--radius-sm);
 }
 
 /* Lists */
@@ -224,6 +235,7 @@ header {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
+	position: relative;
 }
 
 .top-logo {
@@ -259,11 +271,7 @@ span.logo-text,
 	list-style-type: none;
 	padding: var(--spacing-sm);
 	font-family: var(--body-font);
-	font-size: var(--font-md);
-}
-
-.top-links li a {
-	font-size: var(--font-md);
+	font-size: var(--font-smmd);
 }
 
 .menuBtn {
@@ -322,29 +330,42 @@ span.logo-text,
 .homepage-content {
 	margin: 60px auto;
 	display: flex;
-	gap: 20px;
-	border-radius: 30px;
-	overflow: hidden;
+	align-items: center;
+	gap: var(--spacing-md);
+	border-radius: var(--radius-lg);
 }
 
 .home-text {
 	padding: var(--spacing-lg);
 	border-radius: var(--radius-sm);
-}
-
-.homepage-content img {
 	width: 50%;
 }
 
+.border-radius img {
+	width: 100%;
+	border-radius: var(--radius-lg);
+}
+
+.border-radius {
+	width: 50%;
+	object-fit: contain;
+	border-radius: var(--radius-lg);
+}
+
 /* STAY UPDATED */
-.stay-updated {
+.stay-updated,
+.mission {
 	width: 65%;
 	max-width: 1120px;
 	margin: 200px auto;
 	text-align: center;
 	background: rgba(0, 0, 0, 0.368);
-	border-radius: 30px;
+	border-radius: var(--radius-lg);
 	padding: 50px 80px;
+}
+
+.stay-updated {
+	display: none; /* Hiding the form for now */
 }
 
 .stay-updated h2 {
@@ -378,9 +399,9 @@ button {
 .contact-section {
 	width: 95%;
 	max-width: 1600px;
-	margin: 0 auto;
+	margin: 80px auto 160px;
 	padding: 163px 0px;
-	background-image: url(./assets/team-blob.svg);
+	background-image: url(./assets/contact-blob.svg);
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: 100% 100%;
@@ -419,9 +440,15 @@ button {
 	max-width: 600px;
 	border: none;
 	border-radius: 4px;
-	margin-bottom: 15px;
-	padding: 20px;
+	margin-bottom: var(--spacing-mm);
+	padding: var(--spacing-md);
 	background-color: var(--color-white);
+}
+
+/* App Page  */
+.app-img {
+	width: 80%;
+	margin: 0 auto;
 }
 
 /* FOOTER */
@@ -443,8 +470,8 @@ footer a:hover {
 	justify-content: space-between;
 	align-items: center;
 	color: var(--color-black);
-	gap: 10px;
-	margin-top: 10px;
+	gap: var(--spacing-sm);
+	margin-top: var(--spacing-sm);
 }
 
 .footer-content a {
@@ -482,7 +509,7 @@ footer a:hover {
 
 .copyright {
 	padding-bottom: 25px;
-	margin-top: 20px;
+	margin-top: var(--spacing-md);
 }
 
 .copyright p {
@@ -502,6 +529,13 @@ Feel free to change the min/max-width values to whatever you need. Use variables
 ===================================
 */
 
+@media (min-width: 1410px) {
+	.hero {
+		margin: 110px auto;
+		margin-bottom: 130px;
+	}
+}
+
 /* Home Page Hero */
 @media (max-width: 1300px) {
 	.hero-text h1 {
@@ -510,7 +544,7 @@ Feel free to change the min/max-width values to whatever you need. Use variables
 
 	/* Stay Updated */
 	.stay-updated {
-		padding: 30px;
+		padding: var(--spacing-lg);
 		width: 80%;
 	}
 
@@ -519,6 +553,7 @@ Feel free to change the min/max-width values to whatever you need. Use variables
 		flex-direction: column;
 		align-items: center;
 	}
+
 	.stay-updated form [type="submit"] {
 		margin: 15px 0;
 		width: fit-content;
@@ -545,11 +580,21 @@ Feel free to change the min/max-width values to whatever you need. Use variables
 		width: 100%;
 	}
 
+	.home-text h2 {
+		text-align: center;
+	}
+
 	.home-text,
 	.commitment .text-content {
 		background: rgba(0, 0, 0, 0.368);
-		border-radius: 30px;
+		border-radius: var(--radius-lg);
 		padding: 30px;
+	}
+
+	.border-radius,
+	.text-content,
+	.home-text {
+		width: 100%;
 	}
 
 	/* About Page */
@@ -575,22 +620,25 @@ Feel free to change the min/max-width values to whatever you need. Use variables
 
 @media (max-width: 1000px) {
 	/* hamburger bar */
-	.top-links {
+
+	.nav-links-container {
 		position: absolute;
-		top: 80px;
+		top: 60px;
 		right: 15px;
+		z-index: 100;
+	}
+
+	.top-links {
 		padding: 40px 30px;
 		background: rgb(1, 1, 80);
-		border-radius: 20px;
+		border-radius: var(--radius-md);
 		flex-direction: column;
 		z-index: 3;
 	}
 
 	.top-links li {
-		width: 120px;
-		margin: 20px;
-		border: 1px solid;
-		border-radius: 10px;
+		width: 175px;
+		margin: var(--spacing-md);
 		text-align: center;
 	}
 	.nav-links-container {
@@ -603,21 +651,15 @@ Feel free to change the min/max-width values to whatever you need. Use variables
 
 	.menuBtn {
 		display: block;
+		padding: var(--spacing-sm) 0;
 		background-color: transparent;
 	}
+
+	/* links size for mobile menu */
+	.top-links li a {
+		font-size: var(--font-mobile-lg);
+	}
 	/* end of hamburger bar */
-}
-
-/* Tablet & Smaller */
-@media (max-width: 768px) {
-	.wrapper {
-		width: 90%;
-	}
-
-	header {
-		position: relative;
-	}
-
 	/* HERO SECTION */
 	.hero {
 		margin: 100px auto;
@@ -649,6 +691,24 @@ Feel free to change the min/max-width values to whatever you need. Use variables
 		position: absolute;
 		opacity: 0.3;
 	}
+}
+
+/* Tablet & Smaller */
+@media (max-width: 768px) {
+	.wrapper {
+		width: 90%;
+	}
+
+	span.logo-text {
+		font-size: var(--font-mobile-md);
+		margin-right: var(--spacing-sm);
+	}
+
+	/* hamburger bar */
+
+	.top-links {
+		top: 55px;
+	}
 
 	/* Stay Updated */
 	.stay-updated {
@@ -677,7 +737,7 @@ Feel free to change the min/max-width values to whatever you need. Use variables
 /* Tablet Only */
 @media (min-width: 768px) and (max-width: 1024px) {
 	.hero-text {
-		padding: 70px 90px;
+		/* padding: 70px 90px; */
 		width: 500px;
 	}
 
@@ -698,6 +758,10 @@ Feel free to change the min/max-width values to whatever you need. Use variables
 
 	p {
 		font-size: var(--font-smmd);
+	}
+
+	.contact-section {
+		margin: 80px auto;
 	}
 
 	/* footer */

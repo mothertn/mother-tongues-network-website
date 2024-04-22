@@ -1,225 +1,282 @@
 <!DOCTYPE html>
 <html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta name="og:title" content="Mother Tongues Network" />
+		<meta name="title" content="Mother Tongues Network" />
+		<meta
+			name="og:description"
+			content="Dedicated to preserving and revitalizing Indigenous languages across Canada. Providing accessible and interactive resources for learning and celebrating languages and cultures."
+		/>
+		<meta
+			name="description"
+			content="Dedicated to preserving and revitalizing Indigenous languages across Canada. Providing accessible and interactive resources for learning and celebrating languages and cultures."
+		/>
+		<meta name="og:image" content="./assets/meta-data/real-banner.jpg" />
+		<meta name="image" content="./assets/meta-data/real-banner.jpg" />
+		<meta
+			name="keywords"
+			content="Mother Tongues Network, Indigenous, language, Indigenous Language, Language Preservation, Data Sovereignty, Language Revitalization. Plains Cree, Inuk, Mohawk, Anishnabe, Michif, Mobile Language Learning App, Miranda Saddleback, Lianna Rice, Kyla Montour, Max Harris, Trisha Augustine, Charli Ballantyne"
+		/>
+		<link
+			rel="apple-touch-icon"
+			sizes="180x180"
+			href="/assets/favicons/apple-touch-icon.png"
+		/>
+		<link
+			rel="icon"
+			type="image/png"
+			sizes="32x32"
+			href="/assets/favicons/favicon-32x32.png"
+		/>
+		<link
+			rel="icon"
+			type="image/png"
+			sizes="16x16"
+			href="/assets/favicons/favicon-16x16.png"
+		/>
+		<link rel="manifest" href="/assets/favicons/site.webmanifest" />
+		<link
+			rel="mask-icon"
+			href="/assets/favicons/safari-pinned-tab.svg"
+			color="#5bbad5"
+		/>
+		<link rel="shortcut icon" href="/assets/favicons/favicon.ico" />
+		<meta name="msapplication-TileColor" content="#da532c" />
+		<meta
+			name="msapplication-config"
+			content="/assets/favicons/browserconfig.xml"
+		/>
+		<meta name="theme-color" content="#ffffff" />
+		<!-- Styles -->
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&display=swap"
+			rel="stylesheet"
+		/>
+		<link
+			href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap"
+			rel="stylesheet"
+		/>
+		<link rel="stylesheet" href="./normalize.css" />
+		<link rel="stylesheet" href="./style.css" />
+		<title>Mother Tongues Network - Welcome!</title>
+	</head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link
-    rel="apple-touch-icon"
-    sizes="180x180"
-    href="/assets/favicons/apple-touch-icon.png" />
-  <link
-    rel="icon"
-    type="image/png"
-    sizes="32x32"
-    href="/assets/favicons/favicon-32x32.png" />
-  <link
-    rel="icon"
-    type="image/png"
-    sizes="16x16"
-    href="/assets/favicons/favicon-16x16.png" />
-  <link rel="manifest" href="/assets/favicons/site.webmanifest" />
-  <link
-    rel="mask-icon"
-    href="/assets/favicons/safari-pinned-tab.svg"
-    color="#5bbad5" />
-  <link rel="shortcut icon" href="/assets/favicons/favicon.ico" />
-  <meta name="msapplication-TileColor" content="#da532c" />
-  <meta
-    name="msapplication-config"
-    content="/assets/favicons/browserconfig.xml" />
-  <meta name="theme-color" content="#ffffff" />
-  <!-- Styles -->
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link
-    href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&display=swap"
-    rel="stylesheet" />
-  <link
-    href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap"
-    rel="stylesheet" />
-  <link rel="stylesheet" href="./normalize.css" />
-  <link rel="stylesheet" href="./style.css" />
-  <title>Mother Tongues Network - Welcome!</title>
-</head>
+	<body>
+		<header>
+			<div>
+				<a href="./index.html" class="top-logo">
+					<img
+						src="./assets/mtn-pink-logo.png"
+						alt=">Mother Tongues Network logo"
+					/>
+					<span class="logo-text">Mother Tongues Network</span>
+				</a>
+			</div>
+			<button class="menuBtn" id="menuBtn" aria-label="open and close button">
+				<svg
+					id="openSvg"
+					width="46"
+					height="34"
+					viewBox="0 0 46 34"
+					fill="none"
+					xmlns="http://www.w3.org/2000/svg"
+				>
+					<line
+						x1="1.5"
+						y1="1.5"
+						x2="44.5"
+						y2="1.5"
+						stroke="white"
+						stroke-width="3"
+						stroke-linecap="round"
+					/>
+					<line
+						x1="1.5"
+						y1="32.5"
+						x2="44.5"
+						y2="32.5"
+						stroke="white"
+						stroke-width="3"
+						stroke-linecap="round"
+					/>
+					<line
+						x1="1.5"
+						y1="17"
+						x2="44.5"
+						y2="17"
+						stroke="white"
+						stroke-width="3"
+						stroke-linecap="round"
+					/>
+				</svg>
+				<svg
+					class="hidden"
+					id="closeSvg"
+					width="46"
+					height="34"
+					viewBox="0 0 61 56"
+					fill="none"
+					xmlns="http://www.w3.org/2000/svg"
+				>
+					<path
+						d="M2 2L58.8999 53.8008"
+						stroke="white"
+						stroke-width="5"
+						stroke-linecap="round"
+					/>
+					<path
+						d="M59 2L2 54"
+						stroke="white"
+						stroke-width="5"
+						stroke-linecap="round"
+					/>
+				</svg>
+			</button>
+			<nav class="nav-links-container" id="nav-links-container">
+				<ul class="top-links">
+					<li class="active">
+						<a href="./index.html">Home</a>
+					</li>
+					<li>
+						<a href="./about.html">About</a>
+					</li>
+					<li>
+						<a href="./contact.html">Contact</a>
+					</li>
+				</ul>
+			</nav>
+		</header>
+		<main>
+			<button onclick="topFunction()" id="topBtn">
+				<img src="./assets/icons/topBtn.svg" alt="Top Button" />
+			</button>
+			<div class="hero wrapper">
+				<div class="hero-content">
+					<div class="hero-text">
+						<div class="hero-blob">
+							<img
+								src="./assets/home-blob.svg"
+								alt="Decorative background shape."
+								aria-hidden="true"
+							/>
+						</div>
+						<h1>Welcome To Mother Tongues Network</h1>
+						<p>
+							Preserving and revitalizing Indigenous languages across Canada
+						</p>
+					</div>
+					<div class="hero-logo">
+						<img
+							src="./assets/mtn-pink-logo.png"
+							alt="Mother Tongues Network logo"
+						/>
+					</div>
+				</div>
+			</div>
+			<section class="homepage-content left-fade wrapper">
+				<div class="border-radius">
+					<img
+						src="./assets/mtn-content-pics/lianna-city-clarity.jpg"
+						alt="Lianna Rice standing in a city, opening the MTN app which provides a portal to the land."
+					/>
+				</div>
 
-<body>
-  <header>
-    <div>
-      <a href="./index.html" class="top-logo">
-        <img
-          src="./assets/mtn-pink-logo.png"
-          alt=">Mother Tongues Network logo" />
-        <span class="logo-text">Mother Tongues Network</span>
-      </a>
-    </div>
-    <button class="menuBtn" id="menuBtn">
-      <svg
-        id="openSvg"
-        width="46"
-        height="34"
-        viewBox="0 0 46 34"
-        fill="none"
-        xmlns="http://www.w3.org/2000/svg">
-        <line
-          x1="1.5"
-          y1="1.5"
-          x2="44.5"
-          y2="1.5"
-          stroke="white"
-          stroke-width="3"
-          stroke-linecap="round" />
-        <line
-          x1="1.5"
-          y1="32.5"
-          x2="44.5"
-          y2="32.5"
-          stroke="white"
-          stroke-width="3"
-          stroke-linecap="round" />
-        <line
-          x1="1.5"
-          y1="17"
-          x2="44.5"
-          y2="17"
-          stroke="white"
-          stroke-width="3"
-          stroke-linecap="round" />
-      </svg>
-      <svg
-        class="hidden"
-        id="closeSvg"
-        width="61"
-        height="56"
-        viewBox="0 0 61 56"
-        fill="none"
-        xmlns="http://www.w3.org/2000/svg">
-        <path
-          d="M2 2L58.8999 53.8008"
-          stroke="white"
-          stroke-width="3"
-          stroke-linecap="round" />
-        <path
-          d="M59 2L2 54"
-          stroke="white"
-          stroke-width="3"
-          stroke-linecap="round" />
-      </svg>
-    </button>
-    <nav class="nav-links-container" id="nav-links-container">
-      <ul class="top-links">
-        <!-- <li>
-        <a href="#">Home</a>
-      </li> -->
-        <li>
-          <a href="./about.html">About</a>
-        </li>
-        <li>
-          <a href="./contact.html">Contact</a>
-        </li>
-        <li>
-          <a href="./app.html">App</a>
-        </li>
-      </ul>
-    </nav>
-  </header>
-  <main>
-    <button onclick="topFunction()" id="topBtn">
-      <img src="./assets/icons/topBtn.svg" alt="Top Button" />
-    </button>
-    <div class="hero wrapper">
-      <div class="hero-content">
-        <div class="hero-text">
-          <div class="hero-blob">
-            <img src="./assets/home-blob.svg" alt="" />
-          </div>
-          <h1>Welcome To Mother Tongues Network</h1>
-          <p>
-            Preserving and revitalizing Indigenous languages across Canada
-          </p>
-        </div>
-        <div class="hero-logo">
-          <img
-            src="./assets/mtn-pink-logo.png"
-            alt="Mother Tongues Network logo" />
-        </div>
-      </div>
-    </div>
-    <section class="homepage-content left-fade wrapper">
-      <img
-        src="./assets/mtn-content-pics/city-love-inuktut-provides-the-land.jpg"
-        alt="" />
-      <div class="home-text">
-        <h2>Mother Tongues Network (MTN)</h2>
-        <p>
-          We're dedicated to preserving and revitalizing Indigenous languages
-          across Canada. Our mission is to provide Indigenous language
-          learning resources to Indigenous peoples across Canada through a
-          free, accessible, and interactive app platform for Indigenous
-          peoples to learn, share, and celebrate their languages and cultures.
-        </p>
-      </div>
-    </section>
-    <section class="homepage-content right-fade wrapper">
-      <div class="home-text">
-        <h2>Bridging the language gap</h2>
-        <p>
-          With a lack of accessible language resources and limited networks
-          for learning and sharing, many Indigenous peoples, especially youth,
-          are disconnected from their traditional languages due to historical
-          injustices and systemic barriers. MTN aims to bridge this gap by
-          offering a comprehensive platform that houses language videos,
-          lessons, and interactive exercises in various Indigenous languages
-          and dialects.
-        </p>
-      </div>
-      <img src="./assets/mtn-content-pics/miranda-left.jpg" alt="" />
-    </section>
-    <section class="homepage-content left-fade wrapper">
-      <img
-        src="./assets/mtn-content-pics/ananak-and-Innik-immersed-in-traditional-inuit-knowledge.jpg"
-        alt="" />
-      <div class="home-text">
-        <h2 class="sub-headings">Join us in envisioning a future</h2>
-        <p>
-          Where Indigenous languages thrive, reverberating through communities
-          across Canada, empowered by our inclusive and interactive language
-          learning app. We foresee a world where every Indigenous individual,
-          armed with the knowledge of their ancestral language, contributes to
-          the preservation and celebration of Indigenous cultures, fostering
-          deeper connections with their heritage and community.
-        </p>
-      </div>
-    </section>
-    <div class="stay-updated">
-      <h2>Stay updated on our progress</h2>
-      <p>
-        Join our email list to receive the latest news and announcements about
-        the development of our Indigenous Language Learning App. Sign up today
-        and be the first to know when the app is ready for launch!
-      </p>
-      <form action="">
-        <input type="text" name="" id="" placeholder="Email" size="25" />
-        <input type="submit" value="Submit" />
-      </form>
-    </div>
-    <footer>
-      <div class="footer-content wrapper">
-        <div class="footer-logo">
-          <img src="./assets/mtn-pink-logo.png" alt="Mother Tongues Network logo" />
-          <div class="footer-title">
-            <p>Mother Tongues Network</p>
-            <span>Empowering Indigenous Language Learners</span>
-          </div>
-        </div>
-        <div class="copyright">
-          <p>&COPY Copyright MTN 2024</p>
-          <p>All rights reserved</p>
-        </div>
-      </div>
-    </footer>
-  </main>
-  <script src="script.js"></script>
-</body>
+				<div class="home-text">
+					<h2>Mother Tongues Network (MTN)</h2>
+					<p>
+						We're dedicated to preserving and revitalizing Indigenous languages
+						across Canada. Our mission is to provide accessible and interactive
+						Indigenous language learning resources for people to learn, share,
+						and celebrate the languages and cultures of the First Peoples of
+						these lands.
+					</p>
+				</div>
+			</section>
+			<section class="homepage-content right-fade wrapper">
+				<div class="home-text">
+					<h2>Bridging the language gap</h2>
+					<p>
+						With a lack of accessible language resources and limited networks
+						for learning and sharing, many Indigenous peoples, especially youth,
+						are disconnected from their traditional languages due to historical
+						injustices and systemic barriers. MTN aims to bridge this gap by
+						offering a comprehensive platform that houses language videos,
+						lessons, and interactive exercises in various Indigenous languages
+						and dialects.
+					</p>
+				</div>
+				<div class="border-radius">
+					<img
+						src="./assets/mtn-content-pics/miranda-right.jpg"
+						alt="Miranda Saddleback holding berries, with her illustration depicting traditional teachings."
+					/>
+				</div>
+			</section>
+			<section class="homepage-content left-fade wrapper">
+				<div class="border-radius">
+					<img
+						src="./assets/mtn-content-pics/ananak-and-Innik-immersed-in-traditional-inuit-knowledge 1.png"
+						alt="Students viewing traditional seal skin stitchwork."
+					/>
+				</div>
 
+				<div class="home-text">
+					<h2 class="sub-headings">Join us in envisioning a future</h2>
+					<p>
+						Where Indigenous languages thrive, reverberating through communities
+						across Canada, empowered by our inclusive and interactive language
+						learning app. We foresee a world where every Indigenous individual,
+						armed with the knowledge of their ancestral language, contributes to
+						the preservation and celebration of Indigenous cultures, fostering
+						deeper connections with their heritage and community.
+					</p>
+				</div>
+			</section>
+
+			<div class="mission">
+				<h2>Join us in our Mission</h2>
+				<p>
+					To revitalize Indigenous languages and cultures, one word at a time.
+				</p>
+				<button>
+					<a href="./contact.html">Contact Us</a>
+				</button>
+			</div>
+			<div class="stay-updated">
+				<h2>Stay updated on our progress</h2>
+				<p>
+					Join our email list to receive the latest news and announcements about
+					the development of our Indigenous Language Learning App. Sign up today
+					and be the first to know when the app is ready for launch!
+				</p>
+				<form action="">
+					<input type="text" name="" id="" placeholder="Email" size="25" />
+					<input type="submit" value="Submit" />
+				</form>
+			</div>
+			<footer>
+				<div class="footer-content wrapper">
+					<div class="footer-logo">
+						<img
+							src="./assets/mtn-pink-logo.png"
+							alt="Mother Tongues Network logo"
+						/>
+						<div class="footer-title">
+							<p>Mother Tongues Network</p>
+							<span>Empowering Indigenous Language Learners</span>
+						</div>
+					</div>
+					<div class="copyright">
+						<p>&COPY Copyright MTN 2024</p>
+						<p>All rights reserved</p>
+					</div>
+				</div>
+			</footer>
+		</main>
+		<script src="script.js"></script>
+	</body>
 </html>
