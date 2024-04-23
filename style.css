@@ -451,6 +451,29 @@ button {
 	margin: 0 auto;
 }
 
+.survey-section {
+	/* width: 95%; */
+	max-width: 1600px;
+	margin: 120px auto 80px;
+	padding: 163px 0px;
+	background-image: url(./assets/app-blob.svg);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	display: flex;
+	flex-direction: column;
+	width: 1100px;
+}
+
+.survey-section div {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+	margin: 0 auto;
+	max-width: 80%;
+}
+
 /* FOOTER */
 footer {
 	width: 100%;
@@ -611,6 +634,19 @@ Feel free to change the min/max-width values to whatever you need. Use variables
 	.contact-section {
 		width: 100%;
 		background-size: cover;
+	}
+
+	.survey-section {
+		width: 100%;
+		background-size: cover;
+	}
+
+	.survey-section div {
+		max-width: 90%;
+	}
+
+	.survey-section div p {
+		padding: 25px;
 	}
 
 	.stay-updated {
