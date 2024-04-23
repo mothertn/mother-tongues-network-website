@@ -446,9 +446,30 @@ button {
 }
 
 /* App Page  */
+
+.app-section {
+	padding: 20px;
+	margin: 0 auto;
+	width: 90%;
+}
+
 .app-img {
 	width: 80%;
 	margin: 0 auto;
+}
+
+.app-hero-text {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	padding-bottom: 60px;
+	margin: 0 auto;
+	width: 70%;
+}
+
+.app-hero-text p,
+.app-hero-text h1 {
+	flex-basis: 50%;
 }
 
 .survey-section {
