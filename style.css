@@ -448,7 +448,8 @@ button {
 /* App Page  */
 
 .app-section {
-	padding: 20px;
+	padding-top: 50px;
+	padding-bottom: 50px;
 	margin: 0 auto;
 	width: 90%;
 }
