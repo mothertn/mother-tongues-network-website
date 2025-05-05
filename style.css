@@ -705,6 +705,9 @@ Feel free to change the min/max-width values to whatever you need. Use variables
 	.stay-updated {
 		width: 90%;
 	}
+	.mission {
+		padding: 20px;
+	}
 
 	/* footer for tablet and phone */
 
